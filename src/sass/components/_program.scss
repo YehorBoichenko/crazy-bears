@@ -1,8 +1,12 @@
 .program {
   position: relative;
   background-color: #111518;
-  padding: 50px 0;
+  padding-top: 50px;
+  @include mq(tablet) {
+    padding-top: 60px;
+  }
 }
+
 .program-box {
   position: relative;
   margin-left: 94px;
@@ -12,7 +16,7 @@
   position: absolute;
   left: 0;
   top: 14px;
-  height: 100%;
+  height: 1115px;
   border: 1px solid #ffffff;
 }
 .program-title {
@@ -24,6 +28,11 @@
   line-height: 1.3;
   letter-spacing: 0.03em;
   color: #ffffff;
+  @include mq(tablet) {
+    margin-bottom: 52px;
+    margin-left: 40px;
+    text-align: start;
+  }
 }
 .program-box__title {
   position: relative;
@@ -47,14 +56,8 @@
     background-color: var(--accent-color);
   }
 }
-.program-box-list {
-  margin-bottom: 40px;
-  &:last-child {
-    margin-bottom: 0;
-  }
-}
 
-.program-box-list__item-main {
+.collum-list__item-main {
   position: relative;
   padding-left: 38px;
   margin-bottom: 5px;
@@ -70,22 +73,19 @@
   }
 }
 
-.program-box-list__item {
+.collum-list__item {
   padding-left: 20px;
   margin-bottom: 8px;
-  &:last-child {
-    margin-bottom: 0;
-  }
 }
 
-.program-box-list__text-main {
+.collum-list__text-main {
   font-weight: 700;
   font-size: 12px;
   line-height: 1.6;
   letter-spacing: 0.08em;
   color: var(--accent-color);
 }
-.program-box-list__text {
+.collum-list__text {
   font-weight: 500;
   font-size: 12px;
   line-height: 1.6;
@@ -93,6 +93,12 @@
   color: var(--main-text-color);
   opacity: 0.5;
 }
+.last {
+  margin-bottom: 0;
+}
 .hidden {
   color: transparent;
+}
+.collum {
+  margin-bottom: 40px;
 }

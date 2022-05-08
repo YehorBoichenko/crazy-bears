@@ -1,0 +1,44 @@
+.list {
+  list-style: none;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-left: 0px;
+}
+
+li {
+  list-style-type: none;
+}
+
+a,
+a:active,
+a:hover,
+a:visited {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.text,
+.title {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+ul,
+ol,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+.link {
+  display: block;
+  color: currentColor;
+  margin: 0;
+  text-decoration: none;
+}

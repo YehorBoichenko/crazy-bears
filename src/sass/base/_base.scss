@@ -18,17 +18,17 @@ svg {
 
   @include mq(mobile) {
     padding: 0 20px;
-    width: 480px;
+    max-width: 480px;
   }
 
   @include mq(tablet) {
     padding: 0 40px;
-    width: 768px;
+    max-width: 768px;
   }
 
   @include mq(desktop) {
     padding: 0 183px;
-    width: 1366px;
+    max-width: 1366px;
   }
 }
 

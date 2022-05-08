@@ -2,7 +2,37 @@
   <div class="container">
     <!-- logo -->
     <a class="header-logo" href="/src/index.html"
-      ><span>Hell</span><img src="" alt="" width="" height="" /><span>EN</span></a
-    >
-  </div>
+      >Hell<svg class="logo__icon" width="22" height="30">
+        <use href="/src/images/icons.svg#logo-icon"></use>
+        </svg>EN
+    
+      </div>
+      <div class="logo__description">
+        <span class="logo__description--accent">hellish</span>english
+    </a>
+    <div class="header__menu" data-menu-mobile>
+      <nav class="navigation" data-menu-tablet>
+        <ul class="navigation__list grid">
+          <li class="navigation__item">
+            <a class="navigation__link" href>Studying programm</a>
+          </li>
+          <li class="navigation__item">
+             <a class="navigation__link" href>About</a>
+          </li>
+          <li class="navigation__item">
+             <a class="navigation__link" href>Training options</a>
+          </li>
+          <li class="navigation__item">
+             <a class="navigation__link" href>Contacts</a>
+          </li>
+        </ul>
+      </nav>
+      <button class="header__button header__button--light" type="button" data-modal-open>consultation by phone</button>
+    </div>
+  <button class="menu-button is-open"  type="button" data-menu-button aria-expanded="false">
+    <svg class="menu-button__icon" width="20" height="15">
+      <use href="/src/images/icons.svg#icon-menu"></use>
+       <use href="/src/images/icons.svg#icon-menu-close"></use>
+    </svg>
+  </button>
 </header>

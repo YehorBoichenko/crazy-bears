@@ -1,0 +1,47 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  color: var(--main-text-color);
+  background-color: var(--primary-bg-color);
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+
+  @include mq(mobile) {
+    padding: 0 20px;
+    max-width: 480px;
+  }
+
+  @include mq(tablet) {
+    padding: 0 40px;
+    max-width: 768px;
+  }
+
+  @include mq(desktop) {
+    padding: 0 183px;
+    max-width: 1366px;
+  }
+}
+
+.section {
+  padding-bottom: 50px;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--indent);
+}
+
+.grid-item {
+  flex-basis: calc((100% - (var(--indent) * (var(--items) - 1))) / var(--items));
+}

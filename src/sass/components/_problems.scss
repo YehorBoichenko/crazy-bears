@@ -1,0 +1,74 @@
+/* Стили для секции */
+.problems {
+  max-width: 320px;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient( var(--title-color) 80%, var(--title-color-black) 20%);
+
+  padding-top: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+// Оранжевая подсветка выделенных элементов////////
+.accent {
+  color: var(--accent-color);
+}
+
+// <!-- Заголовок -->
+.problems__title {
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 130%;
+  letter-spacing: 0.03em;
+  color: var(--title-color-black);
+
+  margin-bottom: 25px;
+}
+
+// <!-- Список элементов -->
+.problems__list {
+  list-style-type: none;
+  counter-reset: problems__item;
+
+  max-width: 280px;
+  width: 100%;
+  height: 100%;
+  background-color: var(--title-color-black);
+  box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+
+  padding-top: 19px;
+  padding-right: 14px;
+  padding-bottom: 19px;
+  padding-left: 30px;
+}
+
+.problems__item:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.problems__item::before {
+  content: '— 0' counter(problems__item);
+  counter-increment: problems__item;
+
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.08em;
+  color: var(--accent-color);
+}
+
+.problems__text {
+  display: flex;
+  align-items: center;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.08em;
+  color: var(--secondary-bg-color);
+}
+
+.problems__text:not(:first-child) {
+  margin-top: 5px;
+}

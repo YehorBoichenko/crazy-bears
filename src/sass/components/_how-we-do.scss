@@ -107,12 +107,13 @@
 }
 
 .how-we__text::before {
-  left: 47%;
-  top: -20%;
   content: '';
-  position: absolute;
   border: 1px solid #ff6b09;
   width: 20px;
+  position: absolute;
+  left: 50%;
+  top: -20%;
+  transform: translateX(-50%);
 }
 
 .how-we__link {

@@ -20,8 +20,11 @@
   position: absolute;
   left: 0;
   top: 14px;
-  height: 1115px;
+  height: 1175px;
   border: 1px solid #ffffff;
+  @include mq(tablet) {
+    height: 750px;
+  }
 }
 .program-title {
   display: block;
@@ -85,10 +88,21 @@
     background-color: var(--accent-color);
   }
 }
-.collum-list {
+
+.collum-list--1 {
   @include mq(tablet) {
+    width: 174px;
     margin-right: 50px;
   }
+}
+.collum-list--2 {
+  @include mq(tablet) {
+    width: 155px;
+    margin-right: 50px;
+  }
+}
+collum-list--3 {
+  width: 110px;
 }
 .collum-list__item {
   padding-left: 20px;
@@ -125,5 +139,6 @@
   @include mq(tablet) {
     padding-left: 50px;
     display: flex;
+    flex-shrink: 1;
   }
 }

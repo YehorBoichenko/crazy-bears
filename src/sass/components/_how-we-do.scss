@@ -43,8 +43,9 @@
 
 .how-we__item {
   background: #ffffff;
-  width: 280px;
-  height: 280px;
+  max-width: 280px;
+  width: 100%;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -91,6 +92,8 @@
 }
 
 .how-we__text {
+  width: auto;
+  height: auto;
   position: relative;
   font-style: normal;
   font-weight: 500;

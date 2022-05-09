@@ -1,8 +1,59 @@
+.reviews {
+  padding-top: 50px;
+}
+
 .reviews-title {
   font-weight: 800;
   font-size: 20px;
-  line-height: 130%;
+  line-height: 1.3;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-color);
+}
+
+.feadback {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 24px;
+}
+
+.feadbak__photo {
+  margin-bottom: 24px;
+}
+
+.feadbak__name {
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 1.21;
+  letter-spacing: 0.08em;
+  color: var(--accent-color);
+  margin-top: 24px;
+}
+
+.feadbak__education {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.25;
+  text-align: center;
+  letter-spacing: 0.08em;
+  color: var(--main-text-color);
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.feadback__text {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: center;
+  color: #3d3d3d;
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.feadback__tet__all {
+  color: var(--accent-color);
 }

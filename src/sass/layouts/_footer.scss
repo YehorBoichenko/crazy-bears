@@ -72,7 +72,7 @@
     display: block;
 }
 
-li:not(:last-child) {
+.footer__contacts-list:not(:last-child) {
     margin-bottom: 30px;
 }
 

@@ -1,0 +1,96 @@
+/* Стили для секции */
+.problems {
+  min-width: 320px;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(var(--title-color) 77%, var(--title-color-black) 23%);
+  padding-top: 25px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+
+  @include mq(tablet) {
+    max-width: 768px;
+    padding-top: 60px;
+    padding-left: 40px;
+    padding-bottom: 0;
+    padding-right: 40px;
+  }
+}
+
+// Оранжевая подсветка выделенных элементов////////
+.problems__title--accent {
+  color: var(--accent-color);
+}
+
+// <!-- Заголовок -->
+.problems__title {
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 1.3;
+  letter-spacing: 0.03em;
+  color: var(--title-color-black);
+  margin-bottom: 25px;
+}
+
+// <!-- Список элементов -->
+.problems__list {
+  list-style-type: none;
+  counter-reset: problems__item;
+
+  min-width: 280px;
+  width: 100%;
+  height: 100%;
+  background-color: var(--title-color-black);
+  box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+
+  @include mq(mobile-only) {
+    padding-top: 19px;
+    padding-right: 14px;
+    padding-bottom: 19px;
+    padding-left: 30px;
+  }
+
+  @include mq(tablet) {
+    max-width: 688px;
+
+    padding-top: 26px;
+    padding-right: 47px;
+    padding-bottom: 30px;
+    padding-left: 96px;
+
+    display: grid;
+    align-items: stretch;
+    grid-template-columns: auto auto;
+  }
+}
+
+.problems__item:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.problems__item::before {
+  content: '— 0' counter(problems__item);
+  counter-increment: problems__item;
+
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.08em;
+  color: var(--accent-color);
+}
+
+.problems__text {
+  display: flex;
+  align-items: center;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.08em;
+  color: var(--secondary-bg-color);
+}
+
+.problems__text:not(:first-child) {
+  margin-top: 5px;
+}

@@ -1,5 +1,7 @@
+
+
 body {
-  font-family: Montserrat sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-style: normal;
   color: var(--main-text-color);
   background-color: var(--primary-bg-color);
@@ -33,4 +35,14 @@ svg {
 
 .section {
   padding-bottom: 50px;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--indent);
+}
+
+.grid-item {
+  flex-basis: calc((100% - (var(--indent) * (var(--items) - 1))) / var(--items));
 }

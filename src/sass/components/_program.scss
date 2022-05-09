@@ -23,7 +23,7 @@
   height: 1175px;
   border: 1px solid #ffffff;
   @include mq(tablet) {
-    height: 745px;
+    height: 750px;
   }
 }
 .program-title {
@@ -88,22 +88,25 @@
     background-color: var(--accent-color);
   }
 }
-.collum-list {
+
+.collum-list--1 {
   @include mq(tablet) {
-    width: 176px;
+    width: 174px;
     margin-right: 50px;
   }
+}
+.collum-list--2 {
+  @include mq(tablet) {
+    width: 155px;
+    margin-right: 50px;
+  }
+}
+collum-list--3 {
+  width: 110px;
 }
 .collum-list__item {
   padding-left: 20px;
   margin-bottom: 8px;
-  // @include mq(tablet) {
-  //   width: 176px;
-  //   margin-right: 50px;
-  //   &:last-child {
-  //     margin-right: 0;
-  //   }
-  // }
 }
 
 .collum-list__text-main {

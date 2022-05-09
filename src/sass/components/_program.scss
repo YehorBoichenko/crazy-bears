@@ -20,8 +20,11 @@
   position: absolute;
   left: 0;
   top: 14px;
-  height: 1115px;
+  height: 1175px;
   border: 1px solid #ffffff;
+  @include mq(tablet) {
+    height: 745px;
+  }
 }
 .program-title {
   display: block;
@@ -87,12 +90,20 @@
 }
 .collum-list {
   @include mq(tablet) {
+    width: 176px;
     margin-right: 50px;
   }
 }
 .collum-list__item {
   padding-left: 20px;
   margin-bottom: 8px;
+  // @include mq(tablet) {
+  //   width: 176px;
+  //   margin-right: 50px;
+  //   &:last-child {
+  //     margin-right: 0;
+  //   }
+  // }
 }
 
 .collum-list__text-main {
@@ -125,5 +136,6 @@
   @include mq(tablet) {
     padding-left: 50px;
     display: flex;
+    flex-shrink: 1;
   }
 }

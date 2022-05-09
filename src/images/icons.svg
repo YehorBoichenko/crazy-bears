@@ -15,13 +15,6 @@
         </symbol>
 
         <!-- Menu icons -->
-        <symbol id="icon-menu-close" viewBox="0 0 34 32">
-            <path fill="none" stroke="#fff" style="stroke: var(--color1, #fff)" stroke-linejoin="miter"
-                stroke-linecap="butt" stroke-miterlimit="4" stroke-width="4" d="M2.004 30.495l28.991-28.991"></path>
-            <path fill="none" stroke="#fff" style="stroke: var(--color1, #fff)" stroke-linejoin="miter"
-                stroke-linecap="butt" stroke-miterlimit="4" stroke-width="4" d="M30.996 30.495l-28.991-28.991"></path>
-        </symbol>
-
         <symbol id="icon-menu" viewBox="0 0 48 32">
             <path fill="#000000" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4"
                 stroke-width="4.5714" d="M0 2.286h46.857"></path>
@@ -30,6 +23,14 @@
             <path fill="#000000" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4"
                 stroke-width="4.5714" d="M0 29.714h46.857"></path>
         </symbol>
+        <symbol id="icon-menu-close" viewBox="0 0 34 32">
+            <path fill="none" stroke="#fff" style="stroke: var(--color1, #fff)" stroke-linejoin="miter"
+                stroke-linecap="butt" stroke-miterlimit="4" stroke-width="4" d="M2.004 30.495l28.991-28.991"></path>
+            <path fill="none" stroke="#fff" style="stroke: var(--color1, #fff)" stroke-linejoin="miter"
+                stroke-linecap="butt" stroke-miterlimit="4" stroke-width="4" d="M30.996 30.495l-28.991-28.991"></path>
+        </symbol>
+
+
 
         <!-- Advantages icons -->
         <symbol id="advantages-icon-1" viewBox="0 0 27 32">

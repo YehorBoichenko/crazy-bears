@@ -3,6 +3,7 @@
   padding-right: 20px;
   background: var(--title-color-black);
   padding-top: 270px;
+  padding-bottom: 111px;
 }
 
 .about__title {
@@ -47,7 +48,6 @@
   &::after {
     content: '____';
     width: 82px;
-    height: 33px;
     background-color: transparent;
     color: var(--accent-color);
     font-weight: 700;
@@ -61,9 +61,11 @@
 .about-teacher__experience__iteam {
   margin-bottom: 20px;
   text-align: start;
+
   &::before {
     content: '';
-    display: inline-flex;
+    display: flex;
+
     width: 17px;
     height: 14px;
     background-image: url(../images/icons.svg#icon-done);
@@ -73,6 +75,7 @@
     outline: 1px solid red;
     margin-right: 9px;
     margin-left: -47px;
+    margin-bottom: -17px;
   }
 }
 
@@ -89,4 +92,5 @@
   line-height: 20px;
   text-decoration-line: underline;
   color: var(--accent-color);
+  margin-top: 10px;
 }

@@ -18,11 +18,11 @@
   }
 
   @include mq(desktop) {
-    min-width: 1680px;
+    max-width: 1680px;
     padding-top: 100px;
-    padding-left: 183px;
+    // padding-left: 183px;
     padding-bottom: 0;
-    padding-right: 183px;
+    // padding-right: 183px;
   }
 }
 
@@ -49,6 +49,17 @@
   @include mq(desktop) {
     max-width: 866px;
     font-size: 46px;
+  }
+}
+
+// SVG///////////
+.problems__title::after {
+  display: none;
+
+  @include mq(desktop) {
+    width: 455px;
+    height: 472px;
+    background-image: url(./src/images/icon-problems.svg#icon-problems);
   }
 }
 

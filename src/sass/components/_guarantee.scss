@@ -1,0 +1,27 @@
+.guarantee__headline {
+    margin-bottom: 30px;
+    font-weight: 800;
+    font-size: 26px;
+    line-height: 1.30;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--title-color);
+    background-color: var(--primary-bg-color);
+}
+
+.guarantee__list {
+    background-color: var(--tertiary-bg-color);
+    padding-top: 50px;
+    padding-bottom: 51px;
+}
+
+.guarantee__list-text {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+    color: #3D3D3D;
+}
+
+.guarantee__list-text-color {
+    color: var(--accent-color);
+}

@@ -2,8 +2,8 @@
   padding-left: 21px;
   padding-right: 20px;
   background: var(--title-color-black);
-  padding-top: 270px;
   padding-bottom: 111px;
+  margin-top: 39px;
 }
 
 .about__title {
@@ -63,7 +63,7 @@
   text-align: start;
 
   &::before {
-    content: '';
+    content: ' ';
     display: flex;
 
     width: 17px;

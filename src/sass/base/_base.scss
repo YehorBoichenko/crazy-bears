@@ -15,7 +15,7 @@ svg {
 }
 
 .container {
-  max-width: 320px;
+  max-width: 490px;
   padding-left: 20px;
   padding-right: 20px;
   margin-left: auto;
@@ -26,7 +26,6 @@ svg {
     padding-right: 40px;
     max-width: 768px;
   }
-
   @include mq(desktop) {
     max-width: 1366px;
     padding-left: 16px;

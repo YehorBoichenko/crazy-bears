@@ -52,6 +52,9 @@
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--title-color-black);
+  @include mq(tablet) {
+    margin-left: 50px;
+  }
   &::before {
     content: '';
     position: absolute;
@@ -61,6 +64,9 @@
     height: 12px;
     border-radius: 50%;
     background-color: var(--accent-color);
+    @include mq(tablet) {
+      left: -55px;
+    }
   }
 }
 
@@ -79,7 +85,11 @@
     background-color: var(--accent-color);
   }
 }
-
+.collum-list {
+  @include mq(tablet) {
+    margin-right: 50px;
+  }
+}
 .collum-list__item {
   padding-left: 20px;
   margin-bottom: 8px;
@@ -111,5 +121,9 @@
   padding-left: 20px;
   &:last-child {
     margin-bottom: 0;
+  }
+  @include mq(tablet) {
+    padding-left: 50px;
+    display: flex;
   }
 }

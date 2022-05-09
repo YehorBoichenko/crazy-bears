@@ -1,14 +1,17 @@
-<header class="header">
-  <div class="container">
+<body class="page">
+  <header>
+  
+  <div class="container header__container">
     <!-- logo -->
-    <a class="header-logo" href="./index.html"
-      >Hell<svg class="logo__icon" width="22" height="30">
-        <use href="./images/icons.svg#logo-icon"></use>
-        </svg>EN
-    
-      </div>
-      <div class="logo__description">
-        <span class="logo__description--accent">hellish</span>english
+    <a class="logo logo-light logo-landscape" href="./index.html">
+      <div class="logo__title">
+						Hell<svg class="logo__icon" width="22" height="30">
+							<use href="./images/icons.svg#logo-icon"></use></svg
+						>EN
+					</div>
+					<div class="logo__description">
+						<span class="logo__description--accent">hellish</span>english
+					</div>
     </a>
     <div class="header__menu" data-menu-mobile>
       <nav class="navigation" data-menu-tablet>
@@ -27,12 +30,13 @@
           </li>
         </ul>
       </nav>
-      <button class="header__button header__button--light" type="button" data-modal-open>consultation by phone</button>
+      <button class="header__button button--overlay" type="button" data-modal-open>consultation by phone</button>
     </div>
   <button class="menu-button is-open"  type="button" data-menu-button aria-expanded="false">
     <svg class="menu-button__icon" width="20" height="15">
-      <use href="./images/icons.svg#icon-menu"></use>
-       <use href="./images/icons.svg#icon-menu-close"></use>
+      <use class="menu-button__icon--menu" href="./images/icons.svg#icon-menu"></use>
+       <use  class="menu-button__icon--close" href="./images/icons.svg#icon-menu-close"></use>
     </svg>
   </button>
-</header>
+  </header>
+</body>

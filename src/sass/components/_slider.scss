@@ -15,6 +15,12 @@
   padding-left: 24px;
   width: 280px;
   min-width: 0;
+  @include mq(tablet) {
+    margin-top: 50px;
+    width: 100%;
+    padding-left: 0px;
+    padding-left: 0px;
+  }
 }
 
 .slik-list {
@@ -34,10 +40,16 @@
 
 .slider-thumb:not(:first-child) {
   margin-left: 5px;
+  @include mq(tablet) {
+    margin-left: 15px;
+  }
 }
 
 .slider-thumb:not(:last-child) {
   margin-right: 5px;
+  @include mq(tablet) {
+    margin-right: 15px;
+  }
 }
 
 .slider .slider-for .slick-arrow {
@@ -49,6 +61,9 @@
   font-size: 0;
   width: 27px;
   height: 16px;
+  @include mq(tablet) {
+    bottom: 50%;
+  }
 }
 
 .slider .slider-for .slick-prev {

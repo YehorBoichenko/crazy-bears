@@ -19,6 +19,7 @@
   color: var(--title-color-black);
   @include mq(tablet) {
     margin-left: 40px;
+    margin-bottom: 52px;
   }
 }
 
@@ -103,6 +104,23 @@
   color: var(--main-text-color);
   opacity: 0.5;
 }
+.program-box-content {
+  @include mq(tablet) {
+    display: flex;
+  }
+}
 .transparent {
   color: transparent;
+}
+.md {
+  @include mq(tablet) {
+    width: 176px;
+    margin-right: 50px;
+  }
+}
+.sm {
+  @include mq(tablet) {
+    width: 155px;
+    margin-right: 50px;
+  }
 }

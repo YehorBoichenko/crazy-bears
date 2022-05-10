@@ -3,6 +3,12 @@
   padding-right: 20px;
   background: var(--title-color-black);
   margin-top: 39px;
+  padding-bottom: 50px;
+
+  @include mq(desktop) {
+    padding-left: 163px;
+    margin-left: 0, auto;
+  }
 }
 
 .about__title {
@@ -27,7 +33,6 @@
 .about-box {
   @include mq(tablet) {
     display: inline-flex;
-    padding-bottom: 50px;
   }
 }
 .about__photo {
@@ -35,13 +40,16 @@
   @include mq(tablet) {
     display: inline-flex;
     margin-right: 43px;
-    max-height: 305px;
+    max-width: 243px;
+    max-height: 306px;
+    margin-bottom: 0;
   }
 
   @include mq(desktop) {
     max-width: 530px;
     max-height: 667px;
     margin-right: 30px;
+    margin-bottom: 0;
   }
 }
 
@@ -50,6 +58,10 @@
     display: inline-flex;
     flex-direction: column;
     max-width: 401px;
+  }
+
+  @include mq(desktop) {
+    max-width: 641px;
   }
 }
 
@@ -85,6 +97,8 @@
   &::after {
     content: '___';
     width: 82px;
+    padding-top: 16px;
+    padding-bottom: 16px;
     background-color: transparent;
     color: var(--accent-color);
     font-weight: 700;
@@ -92,15 +106,24 @@
     line-height: 1.65;
     letter-spacing: 0;
     margin-left: -22px;
+
+    @include mq(tablet) {
+      padding: 0px;
+    }
+
+    @include mq(desktop) {
+      margin-left: -55px;
+    }
   }
   @include mq(tablet) {
-    font-size: 12px;
-    line-height: 1.25;
+    padding-bottom: 0px;
   }
 
   @include mq(desktop) {
-    font-size: 16px;
-    line-height: 1.25;
+    margin-left: 36px;
+    padding-bottom: 20px;
+    margin-bottom: 15px;
+    margin-top: 30px;
   }
 }
 
@@ -124,8 +147,20 @@
     @include mq(desktop) {
       width: 24px;
       height: 20px;
-      margin-right: 34px;
+      background-size: 24px 20px;
+      margin-left: -55px;
     }
+  }
+
+  @include mq(tablet) {
+    font-size: 12px;
+    line-height: 1.25;
+  }
+  @include mq(desktop) {
+    font-size: 16px;
+    line-height: 20px;
+    padding-bottom: 33px;
+    margin-bottom: 0;
   }
 }
 
@@ -136,8 +171,17 @@
   margin-bottom: 10px;
 
   @include mq(tablet) {
+    font-size: 10px;
+    line-height: 2;
     margin-bottom: 24px;
     font-size: 10px;
+    padding-bottom: 0;
+  }
+
+  @include mq(desktop) {
+    font-size: 18px;
+    line-height: 1.56;
+    margin-bottom: 20px;
   }
 }
 
@@ -147,4 +191,9 @@
   line-height: 20px;
   text-decoration-line: underline;
   color: var(--accent-color);
+
+  @include mq(desktop) {
+    font-size: 18px;
+    line-height: 28px;
+  }
 }

@@ -3,7 +3,15 @@
   <div class="about-box">
 
   
-  <img class="about__photo" src="./images/mobile/1x/about_sm.jpg" alt="Teacher" />
+  <img class="about__photo" 
+  srcset="
+  ./images/mobile/1x/about_sm.jpg 320w, 
+  ./images/tablet/1x/about_md.jpg 768w,
+  ./images/desktop/1x/about_lg.jpg 1366w
+  "
+  
+  src="./images/mobile/1x/about_sm.jpg" 
+  alt="Teacher" />
 
     <div class="about-teacher">
       <h3 class="about-teacher__name">Elena Moreva</h3>

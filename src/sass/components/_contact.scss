@@ -124,7 +124,6 @@
   }
 
   @include mq(desktop) {
-    margin-bottom: 30px;
   }
 }
 
@@ -151,6 +150,7 @@
   }
 
   @include mq(desktop) {
+    margin-bottom: 30px;
     width: 478px;
     height: 70px;
   }
@@ -201,6 +201,7 @@
   }
 
   @include mq(desktop) {
+    margin-bottom: 80px;
     width: 478px;
     height: 70px;
   }
@@ -249,6 +250,7 @@
   }
 
   @include mq(desktop) {
+    margin-bottom: 62px;
     width: 354px;
     height: 70px;
   }

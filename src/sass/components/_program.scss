@@ -41,15 +41,10 @@
     height: 89%;
   }
 }
-// .program-box__item {
-//   position: relative;
-//   margin-bottom: 5px;
-//   padding-left: 26px;
-// }
 .program-box-text {
   display: block;
   padding-left: 26px;
-  position: relative;
+  margin-bottom: 5px;
   font-weight: 700;
   font-size: 14px;
   line-height: 2;
@@ -57,7 +52,11 @@
   text-transform: uppercase;
   color: var(--title-color-black);
 }
-.program-box-text::before {
+
+.program-box__semester {
+  position: relative;
+}
+.program-box__semester::before {
   content: '';
   position: absolute;
   left: -25px;
@@ -67,25 +66,16 @@
   border-radius: 50%;
   background-color: var(--accent-color);
 }
-// .program-box__item::before {
-//   content: '';
-//   position: absolute;
-//   left: -25px;
-//   top: 8px;
-//   width: 12px;
-//   height: 12px;
-//   border-radius: 50%;
-//   background-color: var(--accent-color);
-// }
 
 .program-box-title {
+  margin-bottom: 5px;
   font-weight: 700;
   font-size: 12px;
   line-height: 1.6;
   letter-spacing: 0.08em;
   color: var(--accent-color);
 }
-.program-descr__item--title {
+.program-box__item--title {
   margin-bottom: 5px;
   position: relative;
   padding-left: 43px;
@@ -100,12 +90,12 @@
     background-color: var(--accent-color);
   }
 }
-.program-descr__item--text {
+.program-box__item--text {
   padding-left: 26px;
   margin-bottom: 8px;
 }
 
-.program-descr-text {
+.program-box-paragraph {
   font-weight: 500;
   font-size: 12px;
   line-height: 1.6;
@@ -113,22 +103,3 @@
   color: var(--main-text-color);
   opacity: 0.5;
 }
-// .program-box__collum {
-//   margin-bottom: 40px;
-//   @include mq(tablet) {
-//     display: flex;
-//   }
-// }
-
-// .program-descr--lg {
-//   @include mq(tablet) {
-//     width: 176px;
-//     margin-right: 50px;
-//   }
-// }
-// .program-descr--md {
-//   @include mq(tablet) {
-//     width: 155px;
-//     margin-right: 50px;
-//   }
-// }

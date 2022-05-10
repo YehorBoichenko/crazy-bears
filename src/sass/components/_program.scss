@@ -2,6 +2,7 @@
   position: relative;
   background-color: #111518;
   padding-top: 50px;
+  padding-bottom: 50px;
   @include mq(tablet) {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -24,29 +25,10 @@
 .program-box {
   position: relative;
   padding-left: 94px;
-}
-.program-box__item {
-  position: relative;
-  margin-bottom: 5px;
-  padding-left: 26px;
-}
-.program-box-text {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 2;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--title-color-black);
-}
-.program-box__item::before {
-  content: '';
-  position: absolute;
-  left: -25px;
-  top: 8px;
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background-color: var(--accent-color);
+  @include mq(desktop) {
+    display: flex;
+    flex-direction: column;
+  }
 }
 .program-box::before {
   content: '';
@@ -59,7 +41,44 @@
     height: 89%;
   }
 }
-.program-descr-title {
+// .program-box__item {
+//   position: relative;
+//   margin-bottom: 5px;
+//   padding-left: 26px;
+// }
+.program-box-text {
+  display: block;
+  padding-left: 26px;
+  position: relative;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 2;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--title-color-black);
+}
+.program-box-text::before {
+  content: '';
+  position: absolute;
+  left: -25px;
+  top: 8px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: var(--accent-color);
+}
+// .program-box__item::before {
+//   content: '';
+//   position: absolute;
+//   left: -25px;
+//   top: 8px;
+//   width: 12px;
+//   height: 12px;
+//   border-radius: 50%;
+//   background-color: var(--accent-color);
+// }
+
+.program-box-title {
   font-weight: 700;
   font-size: 12px;
   line-height: 1.6;
@@ -94,26 +113,22 @@
   color: var(--main-text-color);
   opacity: 0.5;
 }
-.program-box__collum {
-  margin-bottom: 40px;
-  @include mq(tablet) {
-    display: flex;
-  }
-}
+// .program-box__collum {
+//   margin-bottom: 40px;
+//   @include mq(tablet) {
+//     display: flex;
+//   }
+// }
 
-.reset {
-  margin-bottom: 0;
-}
-
-.program-descr--lg {
-  @include mq(tablet) {
-    width: 176px;
-    margin-right: 50px;
-  }
-}
-.program-descr--md {
-  @include mq(tablet) {
-    width: 155px;
-    margin-right: 50px;
-  }
-}
+// .program-descr--lg {
+//   @include mq(tablet) {
+//     width: 176px;
+//     margin-right: 50px;
+//   }
+// }
+// .program-descr--md {
+//   @include mq(tablet) {
+//     width: 155px;
+//     margin-right: 50px;
+//   }
+// }

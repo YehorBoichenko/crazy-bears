@@ -5,9 +5,24 @@
   height: 100%;
   background-image: linear-gradient(var(--title-color) 70%, var(--title-color-black) 30%);
 
-  // padding-top: 25px;
+  padding-top: 0;
   padding-left: 20px;
   padding-right: 20px;
+  padding-bottom: 0;
+
+  @include mq(tablet) {
+    max-width: 768px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 0;
+  }
+
+  @include mq(desktop) {
+    max-width: 1680px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+  }
 }
 
 // <!-- Заголовок -->
@@ -19,6 +34,16 @@
   color: var(--title-color-black);
 
   margin-bottom: 30px;
+
+  @include mq(tablet-only) {
+    width: 688px;
+    font-size: 26px;
+    text-align: center;
+  }
+
+  @include mq(desktop) {
+    display: none;
+  }
 }
 
 // <!-- Список элементов -->
@@ -32,14 +57,44 @@
   background-color: var(--title-color-black);
   box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
 
+  display: grid;
+  gap: 36px;
+
   padding-top: 20px;
   padding-right: 14px;
   padding-bottom: 20px;
   padding-left: 30px;
-}
 
-.benefits__item:not(:last-child) {
-  margin-bottom: 36px;
+  @include mq(tablet) {
+    width: 688px;
+
+    padding-top: 35px;
+    padding-right: 118px;
+    padding-bottom: 40px;
+    padding-left: 98px;
+
+    align-items: stretch;
+    grid-template-columns: auto auto;
+    gap: 50px 20px;
+
+    @include mq(desktop) {
+      position: absolute;
+      z-index: 10;
+
+      max-width: 1314px;
+
+      padding-top: 70px;
+      padding-right: 82px;
+      padding-bottom: 70px;
+      padding-left: 84px;
+
+      margin-right: 0;
+      margin-left: 0;
+
+      grid-template-columns: 336px 336px 336px;
+      gap: 60px 40px;
+    }
+  }
 }
 
 .benefits__item::before {
@@ -51,19 +106,34 @@
   line-height: 1.7;
   letter-spacing: 0.08em;
   color: var(--accent-color);
+
+  @include mq(desktop) {
+    font-size: 20px;
+  }
 }
 
 .benefits__text {
-  display: flex;
-  align-items: center;
-
   font-weight: 700;
   font-size: 14px;
   line-height: 1.4;
   letter-spacing: 0.08em;
   color: var(--secondary-bg-color);
-}
-
-.benefits__text:not(:first-child) {
   margin-top: 10px;
+
+  @include mq(tablet-only) {
+    &--first {
+      margin-top: 18px;
+    }
+  }
+
+  @include mq(desktop) {
+    font-size: 20px;
+    line-height: 1.2;
+
+    @include mq(desktop) {
+      &--first {
+        margin-top: 0;
+      }
+    }
+  }
 }

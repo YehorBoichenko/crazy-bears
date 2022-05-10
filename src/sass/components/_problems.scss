@@ -28,7 +28,7 @@
     background-size: 455px 472px, 100% 100%;
     background-position: right 0 top 88px, center;
 
-    min-width: 1680px;
+    max-width: 1680px;
     height: 710px;
 
     padding-top: 100px;
@@ -85,7 +85,7 @@
   }
 
   @include mq(tablet) {
-    min-width: 688px;
+    max-width: 688px;
 
     padding-top: 26px;
     padding-right: 47px;
@@ -98,7 +98,7 @@
   }
 
   @include mq(desktop) {
-    min-width: 1314px;
+    max-width: 1314px;
 
     padding-top: 70px;
     padding-right: 112px;

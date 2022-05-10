@@ -40,10 +40,10 @@
   }
 }
 
-// .logo-light {
-//   z-index: 10;
-//   color: var(--title-color-black);
-// }
+.logo-light {
+  z-index: 10;
+  color: var(--title-color-black);
+}
 
 .logo-landscape {
   @include mq(mobile-only-landscape) {
@@ -211,16 +211,3 @@
 .menu-button.is-open .menu-button__icon--close {
   opacity: 1;
 }
-//  &.menu-button__icon--menu {
-//     opacity: 0;
-//   }
-// &.menu-button__icon--close {
-//     opacity: 0;
-//   }
-//   &.is-open .menu-button__icon--menu {
-//     opacity: 0;
-//   }
-//   &.is-open .menu-button__icon--close {
-//     opacity: 1;
-//     // fill: var(--title-color-black);
-//   }

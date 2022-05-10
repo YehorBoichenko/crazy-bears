@@ -17,8 +17,6 @@
 
   @include mq(desktop) {
     max-width: 1680px;
-    padding-left: 183px;
-    padding-right: 183px;
   }
 }
 
@@ -63,7 +61,7 @@
   padding-left: 30px;
 
   @include mq(tablet) {
-    min-width: 688px;
+    max-width: 688px;
 
     padding-top: 35px;
     padding-right: 118px;
@@ -75,11 +73,11 @@
     gap: 50px 20px;
 
     @include mq(desktop) {
-      min-width: 1314px;
+      max-width: 1314px;
 
       padding-top: 70px;
       padding-right: 82px;
-      padding-bottom: 106px;
+      padding-bottom: 70px;
       padding-left: 84px;
 
       grid-template-columns: 336px 336px 336px;
@@ -111,14 +109,20 @@
   color: var(--secondary-bg-color);
   margin-top: 10px;
 
+  @include mq(tablet-only) {
+    &--first {
+      margin-top: 18px;
+    }
+  }
+
   @include mq(desktop) {
     font-size: 20px;
     line-height: 1.2;
-  }
-}
 
-@include mq(tablet-only) {
-  benefits__text:first-child {
-    margin-top: 18px;
+    @include mq(desktop) {
+      &--first {
+        margin-top: 0;
+      }
+    }
   }
 }

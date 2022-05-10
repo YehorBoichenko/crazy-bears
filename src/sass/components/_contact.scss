@@ -12,6 +12,15 @@
     height: 520px;
     background-image: url(../images/tablet/1x/form-bg_md.png);
   }
+
+  @include mq(desktop) {
+    padding-top: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../images/desktop/1x/form-bg_lg.png);
+    min-width: 1366px;
+  }
+
 }
 
 .contact__list {

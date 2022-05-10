@@ -42,7 +42,6 @@
   @include mq(desktop) {
     width: 448px;
     height: 102px;
-
   }
 
   &::before {
@@ -62,7 +61,6 @@
       width: 100px;
       height: 102px;
     }
-
   }
 }
 
@@ -109,3 +107,4 @@
     font-size: 20px;
   }
 }
+

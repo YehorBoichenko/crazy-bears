@@ -1,18 +1,45 @@
-<section class="hero section">
+<section class="hero-section">
   <div class="container hero__container">
-    <h1 class="hero__title">Complex preparation for English UPE</h1>
-    <p class="hero__subtitle">It won’t be easy</p>
-    <p class="hero__text">But you’re guaranteed to get</p>
-    <p class="hero__text--accent">+ 25 points</p>
+    <!-- <div class="hero__bg-group">
+      <svg class="hero__background" width="768" height="618">
+        <use href="./images/icons.svg#hero-bg-wave"></use>
+      </svg>
+    </div> -->
+    <div class="hero__description">
+      <h1 class="hero__title">Complex preparation for English UPE</h1>
+      <p class="hero__subtitle">It won’t be easy.</p>
+      <p class="hero__text">
+        But you’re guaranteed to get
+        <span class="hero__text--accent">+25 points</span>
+      </p>
 
-    <button class="hero__button" type="button" data-menu-button aria-expanded="false">
-      I want a free lesson
-    </button>
-    <img
-      class="hero__image"
-      src="./images/mobile/1x/hero_sm.png"
-      width="208"
-      alt="Studying process"
-    />
+      <button class="hero__button" type="button" data-modal-open>I want a free lesson</button>
+    </div>
+    <div class="hero__image-group">
+      <picture>
+        <source
+          srcset="./images/desktop/1x/hero_lg.png 1x, ./images/desktop/hero@2x_lg.png 2x"
+          media="(min-width: 1366px)"
+        />
+
+        <source
+          srcset="./images/tablet/1x/hero_md.png 1x, ./images/tablet/hero@2x_md.png 2x"
+          media="(min-width: 768px)"
+        />
+
+        <source
+          srcset="./images/mobile/1x/hero_sm.png 1x, ./images/mobile/hero@2x_sm.png 2x"
+          media="(max-width: 767px)"
+        />
+        <img
+          class="hero__img"
+          src="./images/mobile/1x/hero_sm.png"
+          alt="Studying process"
+          width="208"
+          height="178"
+          loading="lazy"
+        />
+      </picture>
+    </div>
   </div>
 </section>

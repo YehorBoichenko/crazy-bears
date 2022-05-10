@@ -11,17 +11,18 @@
   padding-bottom: 0;
 
   @include mq(tablet) {
-    max-width: 768px;
     padding-left: 40px;
     padding-right: 40px;
     padding-bottom: 0;
   }
 
   @include mq(desktop) {
-    max-width: 1680px;
     padding-left: 0;
     padding-right: 0;
     padding-bottom: 0;
+
+    margin-right: 0;
+    margin-left: 0;
   }
 }
 
@@ -66,7 +67,7 @@
   padding-left: 30px;
 
   @include mq(tablet) {
-    width: 688px;
+    max-width: 688px;
 
     padding-top: 35px;
     padding-right: 118px;
@@ -82,7 +83,8 @@
       z-index: 10;
 
       max-width: 1314px;
-
+      height: 398px;
+      
       padding-top: 70px;
       padding-right: 82px;
       padding-bottom: 70px;

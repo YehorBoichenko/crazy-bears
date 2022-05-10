@@ -42,6 +42,7 @@
   @include mq(desktop) {
     width: 448px;
     height: 102px;
+
   }
 
   &::before {
@@ -60,6 +61,37 @@
     @include mq(desktop) {
       width: 100px;
       height: 102px;
+    }
+
+  }
+
+
+.list__icon-1 {
+  &::before {
+    background-image: url(../images/advantages_svg/advantages_icon1.svg);
+
+    @include mq(desktop) {
+      background-image: url(../images/advantages_svg/advantages_icon1_lg.svg);
+    }
+  }
+}
+
+.list__icon-2 {
+  &::before {
+    background-image: url(../images/advantages_svg/advantages_icon2.svg);
+
+    @include mq(desktop) {
+      background-image: url(../images/advantages_svg/advantages_icon2_lg.svg);
+    }
+  }
+}
+
+.list__icon-3 {
+  &::before {
+    background-image: url(../images/advantages_svg/advantages_icon3.svg);
+
+    @include mq(desktop) {
+      background-image: url(../images/advantages_svg/advantages_icon3_lg.svg);
     }
   }
 }
@@ -106,13 +138,15 @@
 // }
 
 .advantages__title {
+  position: absolute;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.65;
+  padding-left: 68px;
+  color: var(--secondary-bg-color);
+
   @include mq(desktop) {
-    position: absolute;
-    left: 84px;
-    width: 300px;
+    padding-left: 84px;
     font-size: 20px;
   }
 }

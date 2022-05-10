@@ -7,6 +7,10 @@
     letter-spacing: 0.03em;
     color: var(--title-color);
     background-color: var(--primary-bg-color);
+
+    @include mq(desktop) {
+        font-size: 46px;
+    }
 }
 
 .guarantee__list {
@@ -14,27 +18,105 @@
     background-color: var(--tertiary-bg-color);
     padding-top: 50px;
     padding-bottom: 51px;
+
+    @include mq(tablet) {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    @include mq(desktop) {
+        padding-bottom: 45px;
+    }
+}
+
+.guarantee__list::before {
+    content: '';
+    position: absolute;
+    left: 6px;
+    top: 60px;
+    height: 270px;
+    border: 1px dashed #B9B9B9;
+    z-index: 0;
+
+    @include mq(tablet) {
+        left: 84px;
+        top: 40px;
+        height: 180px;
+    }
+
+    @include mq(desktop) {
+        left: 171px;
+        height: 230px;
+    }
 }
 
 .guarantee__list-items {
+    display: flex;
+    align-items: flex-start;
+
+    @include mq(tablet) {
+        margin-left: 79px;
+    }
+
+    @include mq(desktop) {
+        justify-content: center;
+    }
+}
+
+.guarantee__list-item {
+    margin-left: auto;
+    width: 245px;
     font-weight: 500;
     font-size: 12px;
     line-height: 1.66;
     color: #3D3D3D;
+
+    @include mq(tablet) {
+        margin-left: 0;
+        width: 520px;
+    }
+
+    @include mq(desktop) {
+        width: 1038px;
+        font-size: 20px;
+        line-height: 1.4;
+    }
 }
 
 .guarantee__list-items:not(:last-child) {
     margin-bottom: 23px;
+
+    @include mq(tablet) {
+        margin-bottom: 20px;
+    }
+
+    @include mq(desktop) {
+        margin-bottom: 20px;
+    }
 }
 
-.guarantee__list-items-color {
+.guarantee__list-item-color {
     color: var(--accent-color);
 }
 
-.guarantee__list-items::before {
+.guarantee__list li::before {
     content: '';
-    // background-image: url(../images/icons.svg##logo-icon);
-    background-size: 22px 30px;
+    display: inline-block;
+    margin-right: 20px;
+    width: 15px;
+    height: 20px;
+    background-image: url(../images/fire.svg);
     background-repeat: no-repeat;
     background-position: center;
+    z-index: 1;
+
+    @include mq(tablet) {
+        margin-right: 24px;
+    }
+
+    @include mq(desktop) {
+        margin-right: 30px;
+        width: 22px;
+        height: 30px;
+    }
 }

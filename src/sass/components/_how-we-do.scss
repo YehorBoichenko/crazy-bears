@@ -71,6 +71,12 @@
   padding-bottom: 22px;
   box-shadow: 0px 8px 26px rgba(0, 0, 0, 0.1);
 
+  &:hover,
+  &:focus {
+    background-color: #ff6b09;
+    fill: white;
+  }
+
   @include mq(tablet) {
     padding-top: 40px;
     padding-bottom: 0px;
@@ -100,6 +106,11 @@
   fill: #ff6b09;
 }
 
+.how-we__list:hover .how-we_icon,
+.how-we__list:focus .how-we_icon {
+  fill: #ffffff;
+}
+
 .how-we__cards-tittle {
   padding-bottom: 42px;
   font-style: normal;
@@ -125,6 +136,11 @@
     text-align: center;
     letter-spacing: 0.08em;
   }
+}
+
+.how-we__list:hover .how-we__cards-tittle,
+.how-we__list:focus .how-we__cards-tittle {
+  color: white;
 }
 
 .how-we__text {
@@ -157,6 +173,11 @@
   }
 }
 
+.how-we__list:hover .how-we__text,
+.how-we__list:focus .how-we__text {
+  color: white;
+}
+
 .how-we__text::before {
   content: '';
   border: 1px solid #ff6b09;
@@ -171,6 +192,11 @@
     top: -16%;
     transform: translateX(-50%);
   }
+}
+
+.how-we__list:hover .how-we__text::before,
+.how-we__list:focus .how-we__text::before {
+  border-color: white;
 }
 
 .how-we__link {

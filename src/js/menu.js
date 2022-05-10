@@ -16,7 +16,6 @@
 
     // body.classList.toggle('no-scroll');
     body.classList.toggle("body-fixed");
-		logo.classList.toggle("logo-light");
-		logo.classList.toggle("logo-landscape");
+		logo.classList.toggle("logo-light logo-landscape");
   });
 })();

@@ -79,7 +79,7 @@
     align-items: stretch;
     grid-template-columns: auto auto;
   }
-}
+
 
   @include mq(desktop) {
     max-width: 1314px;

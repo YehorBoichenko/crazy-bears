@@ -18,7 +18,7 @@
     margin-left: 77px;
   }
   @include mq(desktop) {
-    padding-left: 0;
+    display: flex;
   }
 }
 .program__title {
@@ -47,6 +47,10 @@
   }
   @include mq(tablet) {
     padding-left: 50px;
+  }
+  @include mq(desktop) {
+    display: flex;
+    flex-direction: column;
   }
 }
 .program__item::before {
@@ -96,6 +100,10 @@
   @include mq(tablet) {
     display: flex;
   }
+  @include mq(desktop) {
+    display: flex;
+    flex-direction: column;
+  }
 }
 .sublist__title {
   position: relative;
@@ -126,6 +134,7 @@
     background-color: var(--accent-color);
   }
   @include mq(tablet) {
+    margin-bottom: 0;
   }
 }
 .lg {

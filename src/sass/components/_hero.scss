@@ -2,8 +2,8 @@
   padding-top: 50px;
   background-image: url(../images/tablet/1x/hero-wave_md.png);
   background-repeat: no-repeat;
-  background-size: cover;
-  width: 100vw;
+  background-size: 100% 878px;
+  //   width: 100vw;
   background-position: -55px;
 
   @include mq(tablet) {

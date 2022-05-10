@@ -27,6 +27,7 @@
 .about-box {
   @include mq(tablet) {
     display: inline-flex;
+    padding-bottom: 50px;
   }
 }
 .about__photo {
@@ -99,7 +100,7 @@
 
   @include mq(desktop) {
     font-size: 16px;
-    line-height: 20px;
+    line-height: 1.25;
   }
 }
 
@@ -133,6 +134,7 @@
   font-size: 12px;
   line-height: 20px;
   margin-bottom: 10px;
+
   @include mq(tablet) {
     margin-bottom: 24px;
     font-size: 10px;

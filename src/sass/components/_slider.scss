@@ -9,11 +9,19 @@
   align-items: center;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 62px;
+  margin-bottom: 50px;
+  padding-left: 24px;
+  padding-left: 24px;
   width: 280px;
+  min-width: 0;
 }
 
 .slik-list {
   overflow: hidden;
+}
+.slik-track {
+  display: flex;
 }
 
 .slider-thumb {
@@ -32,10 +40,29 @@
   margin-right: 5px;
 }
 
-.arrow {
+.slider .slider-for .slick-arrow {
+  position: absolute;
+  display: block;
+  bottom: -23%;
+  z-index: 20;
   background-color: transparent;
-  width: 25px;
+  font-size: 0;
+  width: 27px;
+  height: 16px;
 }
 
-.arrow-prev {
+.slider .slider-for .slick-prev {
+  left: 0;
+  background-image: url(../images/arrow_prev.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.slider .slider-for .slick-next {
+  right: 0;
+  background-image: url(../images/arrow_next.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
 }

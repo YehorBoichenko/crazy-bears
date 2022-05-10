@@ -17,6 +17,12 @@ a:visited {
   cursor: pointer;
 }
 
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+}
+
 .text,
 .title {
   margin-top: 0;

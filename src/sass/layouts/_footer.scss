@@ -1,0 +1,90 @@
+// Logo
+.footer__logo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 21px;
+}
+
+.footer__logo-text {
+  display: flex;
+  text-align: center;
+  font-weight: 800;
+  font-size: 26px;
+  line-height: 1.23;
+  letter-spacing: 0.04em;
+  color: var(--title-color);
+}
+
+.footer__logo-icon {
+  margin: 0 4px;
+}
+
+.footer__logo-text-under {
+    margin-top: 4px;
+    margin-left: 2px;
+    font-weight: 700;
+    font-size: 5px;
+    line-height: 1.2;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--title-color);
+
+}
+
+.footer__logo-text-under-color {
+  color: var(--accent-color);
+}
+
+// Phone
+.footer__tel {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.footer__contacts {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer__phone-icon {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.footer__phone-icon:hover {
+  cursor: pointer;
+}
+
+.footer__call {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+  letter-spacing: 0.08em;
+  color: var(--title-color);
+}
+
+.footer__contact__social__icon {
+  display: block;
+}
+
+.footer__contacts-list:not(:last-child) {
+  margin-bottom: 30px;
+}
+// Rights
+.container__rights {
+  background-color: var(--title-color);
+}
+
+.container__rights-text {
+  text-align: center;
+  padding: 21px 0;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 2;
+  color: var(--main-text-color);
+}

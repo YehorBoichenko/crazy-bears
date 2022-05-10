@@ -1,0 +1,40 @@
+.guarantee__headline {
+    margin-bottom: 30px;
+    font-weight: 800;
+    font-size: 26px;
+    line-height: 1.30;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--title-color);
+    background-color: var(--primary-bg-color);
+}
+
+.guarantee__list {
+    position: relative;
+    background-color: var(--tertiary-bg-color);
+    padding-top: 50px;
+    padding-bottom: 51px;
+}
+
+.guarantee__list-items {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.66;
+    color: #3D3D3D;
+}
+
+.guarantee__list-items:not(:last-child) {
+    margin-bottom: 23px;
+}
+
+.guarantee__list-items-color {
+    color: var(--accent-color);
+}
+
+.guarantee__list-items::before {
+    content: '';
+    // background-image: url(../images/icons.svg##logo-icon);
+    background-size: 22px 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+}

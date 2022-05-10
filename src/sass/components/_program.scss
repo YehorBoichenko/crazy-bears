@@ -110,7 +110,6 @@
 }
 .program__sublist-item {
   position: relative;
-  // padding-left: 16px;
 
   margin-bottom: 8px;
   &:last-child {
@@ -126,8 +125,26 @@
     height: 1px;
     background-color: var(--accent-color);
   }
+  @include mq(tablet) {
+  }
 }
-
+.lg {
+  @include mq(tablet) {
+    width: 174px;
+    margin-right: 50px;
+  }
+}
+.lg-last {
+  @include mq(tablet) {
+    width: 174px;
+  }
+}
+.md {
+  @include mq(tablet) {
+    width: 155px;
+    margin-right: 50px;
+  }
+}
 .sublist__item {
   margin-bottom: 5px;
   font-weight: 500;

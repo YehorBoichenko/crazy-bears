@@ -46,9 +46,13 @@
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-color);
+  max-width: 280px;
+  margin-right: auto;
+  margin-left: auto;
   @include mq(tablet) {
     margin-bottom: 30px;
     font-size: 26px;
+    max-width: 100%;
   }
   @include mq(desktop) {
     font-size: 46px;
@@ -70,10 +74,10 @@
   }
 
   @include mq(desktop) {
-    padding-left: 82px;
     padding-top: 50px;
     padding-bottom: 51px;
     padding-right: auto;
+    margin-top: 0;
   }
 }
 
@@ -143,6 +147,11 @@
     text-align: start;
     padding-left: 0px;
     padding-right: 0px;
+  }
+
+  @include mq(desktop) {
+    font-size: 18px;
+    line-height: 28px;
   }
 }
 

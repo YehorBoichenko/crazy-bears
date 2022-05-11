@@ -35,7 +35,10 @@
     margin-left: 20px;
   }
   @include mq(desktop) {
+    margin-left: 163px;
     margin-bottom: 100px;
+    font-size: 46px;
+    line-height: 1.3;
   }
 }
 .program__item {
@@ -51,6 +54,8 @@
   @include mq(desktop) {
     display: flex;
     flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
   }
 }
 .program__item::before {
@@ -72,6 +77,14 @@
     height: calc(100% + 40px);
     border: 1px solid var(--title-color-black);
   }
+  @include mq(desktop) {
+    transform: rotate(90deg);
+    top: -190px;
+    left: 100%;
+  }
+}
+.program__item:last-child::before {
+  height: 0;
 }
 .program__item::after {
   content: '';
@@ -82,10 +95,16 @@
   height: 12px;
   border-radius: 50%;
   background-color: var(--accent-color);
+  @include mq(desktop) {
+    top: -5px;
+    left: -3px;
+  }
+  @include mq(desktop) {
+    width: 17px;
+    height: 17px;
+  }
 }
-.program__item:last-child::before {
-  height: 0px;
-}
+
 .program__subtitle {
   display: block;
   margin-bottom: 5px;
@@ -95,6 +114,10 @@
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--title-color-black);
+  @include mq(desktop) {
+    font-size: 20px;
+    line-height: 1.4;
+  }
 }
 .program__sublist {
   @include mq(tablet) {
@@ -115,14 +138,13 @@
   line-height: 1.6;
   letter-spacing: 0.08em;
   color: var(--accent-color);
-}
-.program__sublist-item {
-  position: relative;
 
-  margin-bottom: 8px;
-  &:last-child {
-    margin-bottom: 0;
+  @include mq(desktop) {
+    padding-left: 24px;
+    font-size: 20px;
+    line-height: 1.6;
   }
+
   &::before {
     content: '';
     position: absolute;
@@ -132,10 +154,29 @@
     width: 12px;
     height: 1px;
     background-color: var(--accent-color);
+    @include mq(desktop) {
+      height: 2px;
+      width: 20px;
+      top: 16px;
+    }
   }
+}
+
+.program__sublist-item {
+  position: relative;
+
+  margin-bottom: 8px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+
   @include mq(tablet) {
     margin-bottom: 0;
   }
+  // @include mq(desktop) {
+  //   top: 10px;
+  //   left: 0;
+  // }
 }
 .lg {
   @include mq(tablet) {
@@ -165,7 +206,20 @@
   &:last-child {
     margin-bottom: 0;
   }
+  @include mq(desktop) {
+    font-size: 18px;
+    line-height: 1.5;
+  }
 }
 .is-hidden {
   color: transparent;
+}
+.main-ol {
+  @include mq(desktop) {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 0.93;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
 }

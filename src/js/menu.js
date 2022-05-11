@@ -3,7 +3,7 @@
   const mobileMenuRef = document.querySelector('[data-menu-mobile]');
   const tabletMenuRef = document.querySelector('[data-menu-tablet]');
   const body = document.querySelector('body');
-  const logo = document.querySelector('[logo]');
+  const logo = document.querySelector('[data-logo]');
 
   menuBtnRef.addEventListener('click', () => {
     const expanded = menuBtnRef.getAttribute('aria-expanded') === 'true' || false;
@@ -17,6 +17,5 @@
     // body.classList.toggle('no-scroll');
     body.classList.toggle("body-fixed");
 		logo.classList.toggle("logo-light");
-		logo.classList.toggle("logo-landscape");
   });
 })();

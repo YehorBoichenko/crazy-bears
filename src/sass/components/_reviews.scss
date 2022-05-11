@@ -2,6 +2,7 @@
 
 .reviews {
   padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .reviews-icons {
@@ -13,6 +14,9 @@
     display: inline-flex;
     margin-right: 46px;
   }
+  @include mq(desktop) {
+    margin-right: 40px;
+  }
 }
 
 .reviews-text {
@@ -21,9 +25,17 @@
   justify-content: center;
   align-items: center;
   @include mq(tablet) {
-    display: inline-flex;
-    max-width: 420px;
+    font-size: 12px;
+    line-height: 20px;
+    display: flex;
+    justify-content: flex-start;
+    max-width: 412px;
     align-items: flex-start;
+  }
+  @include mq(desktop) {
+    font-size: 18px;
+    line-height: 28px;
+    max-width: 706px;
   }
 }
 
@@ -35,24 +47,42 @@
   letter-spacing: 0.03em;
   color: var(--title-color);
   @include mq(tablet) {
+    margin-bottom: 30px;
     font-size: 26px;
+  }
+  @include mq(desktop) {
+    font-size: 46px;
+    margin-bottom: 50px;
   }
 }
 
-.feadback {
+.slick-track .feadback {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   margin-top: 24px;
   @include mq(tablet) {
+    display: flex;
     flex-direction: row;
     align-items: flex-start;
+    padding: 40px;
+  }
+
+  @include mq(desktop) {
+    padding-left: 82px;
+    padding-top: 50px;
+    padding-bottom: 51px;
+    padding-right: auto;
   }
 }
 
 .feadbak__photo {
   margin-bottom: 24px;
+  @include mq(tablet) {
+    width: 150px;
+    height: auto;
+  }
 }
 
 .feadbak__name {
@@ -64,12 +94,18 @@
   margin-top: 24px;
   @include mq(tablet) {
     font-size: 20px;
-    line-height: 24px;
     text-align: start;
+    margin-top: 0;
+  }
+
+  @include mq(desktop) {
+    font-size: 30px;
+    line-height: 1.23;
   }
 }
 
 .feadbak__education {
+  max-width: 240px;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.25;
@@ -79,9 +115,16 @@
   margin-top: 16px;
   margin-bottom: 16px;
   @include mq(tablet) {
+    max-width: 412px;
     font-size: 12px;
     line-height: 15px;
     text-align: start;
+    margin-top: 20px;
+  }
+  @include mq(desktop) {
+    font-size: 14px;
+    line-height: 17px;
+    max-width: 482px;
   }
 }
 

@@ -1,93 +1,141 @@
-// Logo
-.footer__logo {
+.footer__container {
+  padding-top: 30px;
+  padding-bottom: 30px;
   display: flex;
-  justify-content: center;
-  margin-bottom: 21px;
-}
+  flex-direction: column;
+  align-items: center;
 
-.footer__logo-text {
-
+  @include mq(tablet) {
     display: flex;
-    text-align: center;
-    margin-top: 30px;
-    font-weight: 800;
-    font-size: 26px;
-    line-height: 1.23;
-    letter-spacing: 0.04em;
-    color: var(--title-color);
+    flex-direction: row;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
 
+  @include mq(desktop) {
+    justify-content: flex-start;
+    display: flex;
+    align-items: center;
+    padding-top: 52px;
+    padding-bottom: 53px;
+  }
 }
 
-.footer__logo-icon {
-  margin: 0 4px;
+.footer__logo {
+  margin-bottom: 21px;
+
+  @include mq(tablet) {
+    margin-bottom: 0px;
+  }
 }
 
-.footer__logo-text-under {
-  margin-top: 4px;
+.footer-logo__title {
+  display: flex;
+  align-items: center;
+  font-weight: 800;
+  font-size: 26px;
+  line-height: 1.23;
+  letter-spacing: 0.04em;
+  color: var(--title-color);
+}
+
+.footer-logo__description {
   margin-left: 2px;
+  margin-bottom: 3px;
   font-weight: 700;
-  font-size: 5px;
-  line-height: 1.2;
+  font-size: 8px;
+  line-height: 1.25;
   letter-spacing: 0.18em;
   text-transform: uppercase;
   color: var(--title-color);
 }
 
-.footer__logo-text-under-color {
+.footer-logo__description--accent {
   color: var(--accent-color);
 }
-
-// Phone
-.footer__tel {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 30px;
-}
-
 .footer__contacts {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-}
-
-.footer__phone-icon {
-  display: inline-block;
-  margin-right: 10px;
-}
-.footer__phone-icon:hover {
-  cursor: pointer;
-}
-
-.footer__call {
+  @include mq(tablet) {
     display: flex;
     align-items: center;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 1.21;
-    letter-spacing: 0.08em;
-    color: var(--title-color);
+    margin-left: auto;
+  }
 
+  @include mq(desktop) {
+    margin-left: 290px;
+  }
 }
 
-.footer__contact__social__icon {
-  display: block;
+.footer-contact__link {
+  display: flex;
+  align-items: center;
+
+  @include mq(tablet) {
+    margin-right: 24px;
+    border-right: 1px solid #b9b9b9;
+  }
 }
 
-.footer__contacts-list:not(:last-child) {
-  margin-bottom: 30px;
+.footer-contact__icon {
+  fill: var(--accent-color);
+  margin-right: 10px;
 }
-// Rights
+
+.footer-contact__number {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+
+  letter-spacing: 0.08em;
+
+  color: #111518;
+
+  @include mq(tablet) {
+    font-size: 20px;
+    line-height: 24px;
+
+    margin-right: 24px;
+  }
+
+  @include mq(desktop) {
+    font-size: 30px;
+    line-height: 37px;
+  }
+}
+
+.footer-social__link {
+  margin-top: 30px;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-size: cover;
+  background-image: url(../images/desktop/1x/instagram1.png);
+
+  @include mq(tablet) {
+    margin-top: 0px;
+  }
+
+  @include mq(retina) {
+    background-image: url(../images/desktop/instagram1@2x_lg.png);
+  }
+}
+
 .container__rights {
   background-color: var(--title-color);
+  padding-bottom: 21px;
+  padding-top: 21px;
 }
 
 .container__rights-text {
-  text-align: center;
-  padding: 21px 0;
   font-weight: 500;
   font-size: 14px;
-  line-height: 2;
-  color: var(--main-text-color);
+  line-height: 28px;
+
+  display: flex;
+  justify-content: center;
+  color: #b9b9b9;
+
+  @include mq(tablet) {
+    display: block;
+  }
 }

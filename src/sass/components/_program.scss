@@ -256,3 +256,40 @@
     text-transform: uppercase;
   }
 }
+
+.program::before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 176x;
+  height: 137px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../images/mobile/1x/program_sm.png);
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/mobile/program@2x_sm.png);
+  }
+  @media screen and (min-width: 768px) {
+    background-image: url(../images/tablet/1x/program_md.png);
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/tablet/program@2x_md.png);
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    background-image: url(../images/desktop/1x/program_lg.png);
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/desktop/program@2x_lg.png);
+    }
+  }
+}

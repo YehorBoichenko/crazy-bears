@@ -6,16 +6,11 @@
   background-image: linear-gradient(var(--title-color) 77%, var(--title-color-black) 23%);
   padding-top: 25px;
   padding-bottom: 0;
-  padding-left: 20px;
-  padding-right: 20px;
 
   @include mq(tablet) {
 
     padding-top: 60px;
-    padding-left: 40px;
     padding-bottom: 0;
-    padding-right: 40px;
-
     background-image: linear-gradient(var(--title-color) 340px, var(--title-color-black) 303px);
   }
 
@@ -28,10 +23,6 @@
     background-position: left calc(50% + 655px) top 88px, center;
 
     height: 710px;
-    padding-right: auto;
-    padding-left: auto;
-
-
     padding-top: 100px;
     padding-bottom: 0;
     
@@ -54,13 +45,14 @@
 
   @include mq(tablet) {
     width: 568px;
-    padding-left: 2px;
+    padding-left: 42px;
   }
 
   @include mq(desktop) {
     margin-bottom: 70px;
     font-size: 46px;
     width: 866px;
+    padding-left: 2px;
   }
 }
 
@@ -76,6 +68,9 @@
   background-color: var(--title-color-black);
   box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
 
+  margin-left: auto;
+  margin-right: auto;
+
   @include mq(mobile-only) {
     padding-top: 19px;
     padding-right: 14px;
@@ -85,15 +80,15 @@
   }
 
   @include mq(tablet) {
-     max-width: 688px;
+     width: 688px;
 
     padding-top: 26px;
     padding-right: 47px;
-    padding-bottom: 30px;
+    padding-bottom: 55px;
     padding-left: 96px;
 
     align-items: stretch;
-    grid-template-columns: 236px 287px;
+    grid-template-columns:auto auto;
     gap: 22px 32px;
 
     margin-left: auto;
@@ -101,7 +96,7 @@
   }
 
   @include mq(desktop) {
-    max-width: 1314px;
+    width: 1314px;
 
     padding-top: 70px;
     padding-right: 112px;

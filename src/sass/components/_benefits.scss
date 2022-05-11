@@ -6,23 +6,21 @@
   background-image: linear-gradient(var(--title-color) 70%, var(--title-color-black) 30%);
 
   padding-top: 0;
-  padding-left: 20px;
-  padding-right: 20px;
   padding-bottom: 0;
 
   @include mq(tablet) {
     padding-left: 40px;
     padding-right: 40px;
     padding-bottom: 0;
+    background-image: linear-gradient(var(--title-color) 50%, var(--title-color-black) 50%);
   }
 
   @include mq(desktop) {
-    padding-left: 0;
-    padding-right: 0;
-    padding-bottom: 0;
-
-    margin-right: 0;
-    margin-left: 0;
+    padding-top: 65px;
+    padding-right: auto;
+    padding-left: auto;
+    padding-bottom: 65px;
+    background-image: linear-gradient(var(--title-color) 50%, var(--title-color-black) 50%);
   }
 }
 
@@ -79,20 +77,17 @@
     gap: 50px 20px;
 
     @include mq(desktop) {
-      position: absolute;
+      position: relative;
       z-index: 10;
 
       max-width: 1314px;
-      height: 398px;
-      
+    
       padding-top: 70px;
       padding-right: 82px;
       padding-bottom: 70px;
       padding-left: 84px;
 
-      margin-right: 0;
-      margin-left: 0;
-
+  
       grid-template-columns: 336px 336px 336px;
       gap: 60px 40px;
     }

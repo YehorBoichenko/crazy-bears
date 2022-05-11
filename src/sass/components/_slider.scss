@@ -1,0 +1,29 @@
+.slider {
+  position: relative;
+  min-width: 0;
+}
+
+.slider-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 172px;
+}
+
+.slik-list {
+  width: 172px;
+  overflow: hidden;
+}
+
+.slider-thumb {
+  width: 54px;
+  height: 54px;
+
+  border-radius: 50%;
+  margin-left: 5px;
+  margin-right: 5ppx;
+
+  outline: 1px solid red;
+}

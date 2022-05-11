@@ -65,7 +65,6 @@
     padding: 108px 20px 20px 20px;
     position: fixed;
     display: none;
-
     width: 100vw;
     height: 100vh;
     background-color: var(--bg-color-menu);
@@ -177,7 +176,6 @@
   &:focus {
     color: var(--title-color-white);
     background-color: var(--accent-color);
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 .menu-button__icon--menu {

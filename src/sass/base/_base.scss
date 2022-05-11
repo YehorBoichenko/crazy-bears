@@ -3,6 +3,9 @@ body {
   font-style: normal;
   color: var(--main-text-color);
   background-color: var(--primary-bg-color);
+  &.no-scroll {
+    overflow: hidden;
+  }
 }
 
 img,
@@ -19,14 +22,14 @@ svg {
   margin-right: auto;
 
   @include mq(tablet) {
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
     max-width: 768px;
   }
   @include mq(desktop) {
     max-width: 1366px;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 

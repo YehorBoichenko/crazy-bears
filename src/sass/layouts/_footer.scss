@@ -6,13 +6,16 @@
 }
 
 .footer__logo-text {
-  display: flex;
-  text-align: center;
-  font-weight: 800;
-  font-size: 26px;
-  line-height: 1.23;
-  letter-spacing: 0.04em;
-  color: var(--title-color);
+
+    display: flex;
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 800;
+    font-size: 26px;
+    line-height: 1.23;
+    letter-spacing: 0.04em;
+    color: var(--title-color);
+
 }
 
 .footer__logo-icon {
@@ -20,15 +23,14 @@
 }
 
 .footer__logo-text-under {
-    margin-top: 4px;
-    margin-left: 2px;
-    font-weight: 700;
-    font-size: 5px;
-    line-height: 1.2;
-    letter-spacing: 0.18em;
-    text-transform: uppercase;
-    color: var(--title-color);
-
+  margin-top: 4px;
+  margin-left: 2px;
+  font-weight: 700;
+  font-size: 5px;
+  line-height: 1.2;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--title-color);
 }
 
 .footer__logo-text-under-color {
@@ -53,19 +55,20 @@
   display: inline-block;
   margin-right: 10px;
 }
-
 .footer__phone-icon:hover {
   cursor: pointer;
 }
 
 .footer__call {
-  display: flex;
-  align-items: center;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 1.21;
-  letter-spacing: 0.08em;
-  color: var(--title-color);
+    display: flex;
+    align-items: center;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.21;
+    letter-spacing: 0.08em;
+    color: var(--title-color);
+
 }
 
 .footer__contact__social__icon {

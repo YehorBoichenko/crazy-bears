@@ -2,6 +2,7 @@
   --accent-color: #ff6b09;
   --title-color: #111518;
   --title-color-black: #ffffff;
+  --title-color-white: #ffffff;
   --main-text-color: #b9b9b9;
   --primary-bg-color: #ffffff;
   --secondary-bg-color: #111518;
@@ -10,4 +11,9 @@
 
   --bg-color-menu: rgba(17, 21, 24, 0.9);
   --indent: 30px;
+  scroll-behavior: smooth;
+
+  // timing
+  --cubic-bezier: cubic-bezier(0.4, 0, 0.2, 1);
+  --duration: 250ms;
 }

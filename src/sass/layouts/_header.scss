@@ -2,8 +2,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-bottom: 33px;
-  padding-top: 33px;
+  padding-bottom: 30px;
+  padding-top: 30px;
 
   @include mq(tablet-only) {
     justify-content: flex-start;
@@ -172,9 +172,17 @@
   color: var(--accent-color);
   background-color: transparent;
   border: 2px solid var(--accent-color);
+
+  &:hover,
+  &:focus {
+    color: var(--title-color-white);
+    background-color: var(--accent-color);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 .menu-button__icon--menu {
   fill: var(--button-menu-color);
+  background-color: var(--accent-color);
 }
 
 .menu-button {

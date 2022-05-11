@@ -64,7 +64,6 @@
 
 .how-we__item {
   width: 280px;
-  height: 280px;
   text-align: center;
   background-color: var(--second-color);
   box-shadow: 4px 6.928px 23.68px 8.32px rgb(29 29 27 / 11%);
@@ -74,7 +73,7 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
   &:not(:last-child) {
-    margin-bottom: 16px;
+    margin-bottom: 15px;
   }
 
   &:last-child {
@@ -138,7 +137,6 @@
   letter-spacing: 0.08em;
   margin: 20px 0 30px;
   width: 100%;
-  height: 40px;
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);

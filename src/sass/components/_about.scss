@@ -1,9 +1,9 @@
 .about {
-  padding-left: 21px;
+  padding-left: 20px;
   padding-right: 20px;
   background: var(--title-color-black);
   margin-top: 39px;
-  padding-bottom: 50px;
+  padding-bottom: 25px;
 
   @include mq(desktop) {
     padding-left: 163px;
@@ -187,6 +187,7 @@
 }
 
 .about-certificate {
+  margin-top: 10px;
   font-weight: 500;
   font-size: 12px;
   line-height: 20px;

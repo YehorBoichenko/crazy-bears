@@ -39,18 +39,17 @@
 }
 .about__photo {
   width: 243px;
+  height: auto;
   margin-bottom: 20px;
   @include mq(tablet) {
     display: inline-flex;
     margin-right: 43px;
     max-width: 243px;
-    max-height: 306px;
+    height: 305px;
     margin-bottom: 0;
   }
 
   @include mq(desktop) {
-    max-width: 530px;
-    max-height: 667px;
     margin-right: 30px;
     margin-bottom: 0;
   }

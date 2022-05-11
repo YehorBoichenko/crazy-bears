@@ -38,6 +38,7 @@
   }
 }
 .about__photo {
+  width: 243px;
   margin-bottom: 20px;
   @include mq(tablet) {
     display: inline-flex;

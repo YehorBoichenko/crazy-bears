@@ -100,10 +100,17 @@
 //arrows for tablet view
 .slider .slider-for .slick-prev {
   left: 0;
+  @include mq(desktop) {
+    left: 34px;
+  }
 }
 
 .slider .slider-for .slick-next {
   right: 0;
+
+  @include mq(desktop) {
+    right: 34px;
+  }
 }
 
 .slider-nav .slick-list {

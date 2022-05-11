@@ -5,6 +5,11 @@
   @include mq(tablet) {
     padding-top: 60px;
   }
+  @include mq(desktop) {
+    padding-bottom: 120px;
+    padding-top: 120px;
+    overflow: hidden;
+  }
 }
 
 .program-box {
@@ -38,6 +43,7 @@
   }
   @include mq(desktop) {
     display: flex;
+    margin-left: 0;
   }
 }
 .program__title {
@@ -57,7 +63,6 @@
     margin-left: 20px;
   }
   @include mq(desktop) {
-    margin-left: 163px;
     margin-bottom: 100px;
     font-size: 46px;
     line-height: 1.3;

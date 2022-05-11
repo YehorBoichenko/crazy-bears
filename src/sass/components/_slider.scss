@@ -1,83 +1,119 @@
 .slider {
-  position: relative;
-  min-width: 0;
+}
+
+.slider-for {
+  margin-bottom: 30px;
+  @include mq(desktop) {
+    margin-bottom: 40px;
+  }
 }
 
 .slider-nav {
+  position: relative;
+
   display: flex;
   justify-content: center;
   align-items: center;
+
   margin-left: auto;
   margin-right: auto;
-  margin-top: 62px;
-  margin-bottom: 50px;
-  padding-left: 24px;
-  padding-left: 24px;
+  padding-left: 44px;
+  padding-right: 44px;
   width: 280px;
-  min-width: 0;
+
   @include mq(tablet) {
-    margin-top: 50px;
     width: 100%;
-    padding-left: 0px;
-    padding-left: 0px;
+  }
+}
+.slider .slik-slide {
+  @include mq(tablet) {
+    width: 54px;
+    height: auto;
   }
 }
 
 .slik-list {
-  overflow: hidden;
+  max-width: 100%;
 }
-.slik-track {
-  display: flex;
-}
-
-.slider-thumb {
-  display: inline;
-  max-width: 54px;
-  max-height: 54px;
-  border-radius: 50%;
-  outline: 1px solid red;
-}
-
-.slider-thumb:not(:first-child) {
-  margin-left: 5px;
+.slik-list .slick-track {
   @include mq(tablet) {
-    margin-left: 15px;
+    width: 100%;
+    height: auto;
   }
 }
 
-.slider-thumb:not(:last-child) {
+.slider .slider-thumb {
+  display: block;
+  width: 54px;
+  height: auto;
+  border-radius: 50%;
+
+  margin-left: 5px;
   margin-right: 5px;
+
   @include mq(tablet) {
     margin-right: 15px;
+    width: 54px;
+    height: auto;
   }
 }
-
-.slider .slider-for .slick-arrow {
+// arrows styles
+.slider .slick-arrow {
   position: absolute;
   display: block;
-  bottom: -23%;
+  top: 50%;
+  transform: translateY(-50%);
   z-index: 20;
   background-color: transparent;
   font-size: 0;
   width: 27px;
   height: 16px;
+
   @include mq(tablet) {
     bottom: 50%;
   }
 }
 
-.slider .slider-for .slick-prev {
-  left: 0;
+.slider .slick-prev {
   background-image: url(../images/arrow_prev.svg);
   background-size: 100%;
   background-repeat: no-repeat;
   background-size: contain;
 }
 
-.slider .slider-for .slick-next {
-  right: 0;
+.slider .slick-next {
   background-image: url(../images/arrow_next.svg);
   background-size: 100%;
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+// arrows for mobile view
+.slider .slider-nav .slick-prev {
+  left: 0;
+}
+
+.slider .slider-nav .slick-next {
+  right: 0;
+}
+
+//arrows for tablet view
+.slider .slider-for .slick-prev {
+  left: 0;
+}
+
+.slider .slider-for .slick-next {
+  right: 0;
+}
+
+.slider-nav .slick-list {
+  padding: 4px 0;
+}
+
+.slider-nav .slick-current {
+  outline: 1px solid var(--accent-color);
+}
+
+.slider-nav .slick-disabled {
+  filter: grayscale(1);
 }

@@ -7,6 +7,7 @@
   background-image: linear-gradient(var(--title-color) 70%, var(--title-color-black) 30%);
 
   @include mq(tablet) {
+    padding: 50px 0;
     background-image: linear-gradient(var(--title-color) 50%, var(--title-color-black) 50%);
   }
 

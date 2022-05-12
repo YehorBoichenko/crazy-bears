@@ -3,7 +3,6 @@
   background-image: url(../images/tablet/1x/hero-wave_md.png);
   background-repeat: no-repeat;
   background-size: 100% 878px;
-  //   width: 100vw;
   background-position: -55px;
 
   @include mq(tablet) {
@@ -36,7 +35,6 @@
 .hero__description {
   display: block;
   max-width: 280px;
-  //   flex-wrap: wrap;
 
   @include mq(tablet) {
     max-width: 332px;
@@ -90,7 +88,7 @@
 }
 
 .hero__text--accent {
-  @extend.hero__subtitle;
+  @extend .hero__subtitle;
   font-weight: 700;
   color: var(--accent-color);
 
@@ -136,6 +134,5 @@
     width: 842px;
     height: 718px;
     top: -54px;
-    right: -144px;
   }
 }

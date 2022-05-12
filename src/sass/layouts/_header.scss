@@ -1,10 +1,12 @@
+.header {
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+
 .header__container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-bottom: 33px;
-  padding-top: 33px;
-
   @include mq(tablet-only) {
     justify-content: flex-start;
   }
@@ -22,6 +24,7 @@
   }
   &__icon {
     fill: var(--accent-color);
+    margin: 3px;
   }
   &__description {
     margin-left: 2px;
@@ -34,6 +37,7 @@
   }
   &__description--accent {
     color: var(--accent-color);
+    margin-right: 4px;
   }
   @include mq(mobile-only) {
     transform: scale(0.665);
@@ -42,7 +46,7 @@
 
 .logo-light {
   z-index: 10;
-  color: var(--title-color-black);
+  color: var(--title-color-white);
 
   @include mq(mobile-only-landscape) {
     position: fixed;
@@ -120,10 +124,11 @@
     font-weight: 800;
     font-size: 26px;
     line-height: 1.8;
-    color: var(--title-color-black);
+    color: var(--title-color-white);
     &:hover,
     &:focus {
       color: var(--accent-color);
+      transition: var(--duration) var(--cubic-bezier);
     }
     // @include mq(tablet) {
     // }
@@ -156,7 +161,7 @@
   line-height: 1.25;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--title-color-black);
+  color: var(--title-color-white);
   background-color: var(--accent-color);
   @include mq(desktop) {
     padding: 28px 5px;
@@ -172,6 +177,12 @@
   color: var(--accent-color);
   background-color: transparent;
   border: 2px solid var(--accent-color);
+  &:hover,
+  &:focus {
+    color: var(--title-color-white);
+    background-color: var(--accent-color);
+    transition: background-color var(--duration) var(--cubic-bezier);
+  }
 }
 .menu-button__icon--menu {
   fill: var(--button-menu-color);

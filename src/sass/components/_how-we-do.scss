@@ -47,12 +47,12 @@
   padding: 30px 15px;
 
   text-align: center;
-  background-color: var(--second-color);
+  background-color: var(--primary-bg-color);
   box-shadow: 4px 6.928px 23.68px 8.32px rgb(29 29 27 / 11%);
 
   transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: var(--duration);
+  transition-timing-function: var(cubic-bezier);
 
   @include mq(tablet) {
     flex-basis: calc((100% - 2 * 20px) / 2);
@@ -67,7 +67,7 @@
 
   &:hover,
   &:focus {
-    background-color: #ff6b09;
+    background-color: var(--accent-color);
     color: white;
   }
 }
@@ -78,11 +78,11 @@
   width: 74px;
   height: 60px;
 
-  fill: #ff6b09;
+  fill: var(--accent-color);
 
   transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: var(--duration);
+  transition-timing-function: var(cubic-bezier);
 
   .how-we__item:hover &,
   .how-we__item:focus & {
@@ -129,7 +129,7 @@
   letter-spacing: 0.08em;
 
   text-align: center;
-  color: #b9b9b9;
+  color: var(--main-text-color);
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -154,11 +154,11 @@
   display: block;
   width: 25px;
   height: 2px;
-  background-color: #ff6b09;
+  background-color: var(--accent-color);
 
   transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: var(--duration);
+  transition-timing-function: var(cubic-bezier);
 
   .how-we__item:hover &,
   .how-we__item:focus & {

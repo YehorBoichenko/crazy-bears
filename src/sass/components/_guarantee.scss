@@ -1,6 +1,5 @@
 .guarantee {
   padding-top: 25px;
-  padding-bottom: 25px;
 
   @include mq(desktop) {
     padding-top: 65px;
@@ -80,7 +79,7 @@
     width: 15px;
     height: 20px;
     left: 1px;
-    background-image: url(../images/fire.svg);
+    background-image: url(../images/logo/fire.svg);
     transform: translate(-50%);
   }
 }

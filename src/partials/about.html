@@ -1,18 +1,14 @@
 <section class="about container">
   <h2 class="about__title">Teacher</h2>
-  <div class="about-box">
-
   
-  <img class="about__photo" 
-  srcset="
-  ./images/mobile/1x/about_sm.jpg 480w, 
-  ./images/tablet/1x/about_md.jpg 768w,
-  ./images/desktop/1x/about_lg.jpg 1366w
-  "
+  <div class="teacher-box">
+<picture class="photo-thumb">
+<source srcset="./images/mobile/1x/about_sm.jpg 1x, ./images/mobile/about@2x_sm.jpg 2x" media="(max-width: 767px)">
+<source srcset="./images/tablet/1x/about_md.jpg 1x, ./images/tablet/about@2x_md.jpg 2x" media="(max-width: 1365px)">
+<source srcset="./images/desktop/1x/about_lg.jpg 1x, ./images/desktop/about@2x_lg.jpg 2x" media="(min-width: 1366px)">
+<img src="./images/mobile/1x/about_sm.jpg" alt="teacher">
+  </picture>
   
-  src="./images/mobile/1x/about_sm.jpg" 
-  alt="Teacher" />
-
     <div class="about-teacher">
       <h3 class="about-teacher__name">Elena Moreva</h3>
       <ul class="about-teacher__experience list">
@@ -43,7 +39,10 @@
           (University of Houston).
         </p>
       </div>
-      <a class="about-certificate" href="">Cambrige English Entry Level Certificate</a>
+      <a class="about-certificate" href="https://www.cambridgeenglish.org/exams-and-tests/preliminary/" target="_blank" rel="noreferrer noopener">Cambrige English Entry Level Certificate</a>
     </div>
     </div>
+
+  </div>
+  
   </div>

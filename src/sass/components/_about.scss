@@ -32,26 +32,27 @@
   }
 }
 
-.about-box {
-  @include mq(tablet) {
-    display: inline-flex;
-  }
+.teacher-box {
+  display: inline-flex;
 }
-.about__photo {
-  width: 243px;
-  height: auto;
+
+.photo-thumb {
+  display: flex;
   margin-bottom: 20px;
+
   @include mq(tablet) {
     display: inline-flex;
     margin-right: 43px;
-    max-width: 243px;
-    height: 305px;
     margin-bottom: 0;
+    max-width: 243px;
+    max-height: 305px;
   }
 
   @include mq(desktop) {
     margin-right: 30px;
     margin-bottom: 0;
+    max-width: 530px;
+    max-height: 667px;
   }
 }
 

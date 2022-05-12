@@ -33,12 +33,16 @@
 }
 
 .teacher-box {
-  display: inline-flex;
+  @include mq(tablet) {
+    display: inline-flex;
+  }
 }
 
 .photo-thumb {
   display: flex;
   margin-bottom: 20px;
+  max-width: 243px;
+  max-height: 305px;
 
   @include mq(tablet) {
     display: inline-flex;

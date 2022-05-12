@@ -2,17 +2,21 @@
   <div class="container">
     <h2 class="about__title">Teacher</h2>
     <div class="about-box">
-      <img
-        class="about__photo"
-        srcset="
-          ./images/about/about_sm.jpg  320w, ./images/about/about@2x_sm.jpg  320w
-          ./images/about/about_md.jpg  768w, ./images/about/about@2x_md.jpg  768w
-          ./images/about/about_lg.jpg 1366w, ./images/about/about@2x_lg.jpg 1366w
-        "
-        src="./images/about/about_sm.jpg"
-        alt="Teacher"
-      />
-
+      <picture>
+        <source
+          srcset="./images/about/about_sm.jpg 1x, ./images/about/about@2x_sm.jpg 2x"
+          media="(min-width: 767px)"
+        />
+        <source
+          srcset="./images/about/about_md.jpg 1x, /images/about/about@2x_md.jpg 2x"
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="./images/about/about_lg.jpg 1x, ./images/about/about@2x_lg.jpg 2x"
+          media="(min-width: 1366px)"
+        />
+        <img class="about__photo" src="./images/about/about_sm.jpg" alt="Teacher" loading="lazy" />
+      </picture>
       <div class="about-teacher">
         <h3 class="about-teacher__name">Elena Moreva</h3>
         <ul class="about-teacher__experience list">

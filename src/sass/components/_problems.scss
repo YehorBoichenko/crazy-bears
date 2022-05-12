@@ -7,13 +7,14 @@
 
   @include mq(tablet) {
     padding-top: 60px;
-    padding-bottom: 65px;
+    padding-bottom: 25px;
     background-image: linear-gradient(var(--title-color) 340px, var(--title-color-black) 303px);
   }
 
   // SVG///////////
   @include mq(desktop) {
     padding-top: 100px;
+    padding-bottom: 65px;
 
     background-image: url(../images/icon-problems.svg),
       linear-gradient(var(--title-color) 560px, var(--title-color-black) 150px);

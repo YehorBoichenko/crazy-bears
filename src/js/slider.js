@@ -3,6 +3,7 @@ $('.slider-for').slick({
   slidesToScroll: 1,
   arrows: false,
   fade: true,
+  infinite: false,
   asNavFor: '.slider-nav',
   mobileFirst: true,
   responsive: [
@@ -14,9 +15,9 @@ $('.slider-for').slick({
     },
   ],
 });
+
 $('.slider-nav').slick({
   slidesToShow: 3,
-  // slidesToScroll: 1,
   asNavFor: '.slider-for',
   arrows: true,
   dots: false,
@@ -28,6 +29,7 @@ $('.slider-nav').slick({
       breakpoint: 767,
       settings: {
         slidesToShow: 7,
+        slidesToScroll: 7,
         arrows: false,
       },
     },

@@ -1,15 +1,15 @@
 .about {
-  padding-left: 21px;
-  padding-right: 20px;
-  background: var(--title-color-black);
-  margin-top: 39px;
-  padding-bottom: 50px;
+  // padding-left: 21px;
+  // padding-right: 20px;
+  // background-color: var(--title-color-black);
+  padding-top: 25px;
+  padding-bottom: 25px;
 
   @include mq(desktop) {
-    padding-left: 163px;
-    margin-left: 0, auto;
-    padding-bottom: 0px;
-    margin-bottom: 130px;
+    // padding-left: 163px;
+    // margin-left: 0 auto;
+    padding-top: 65px;
+    padding-bottom: 65px;
   }
 }
 
@@ -61,133 +61,133 @@
 }
 
 .about-teacher {
-  @include mq(tablet) {
-    display: inline-flex;
-    flex-direction: column;
-    max-width: 401px;
-  }
+  max-width: 402px;
 
   @include mq(desktop) {
-    max-width: 641px;
+    max-width: 642px;
   }
 }
 
 .about-teacher__name {
+  margin-bottom: 10px;
+
   font-weight: 800;
   font-size: 20px;
   line-height: 24px;
   letter-spacing: 0.08em;
   color: var(--title-color);
-  &::after {
-    content: '';
-    display: inline-block;
-    width: 100%;
-    height: 1px;
-    background-color: rgba(185, 185, 185, 1);
-  }
+
   @include mq(desktop) {
+    margin-bottom: 15px;
+
     font-size: 30px;
     line-height: 37px;
   }
 }
 
 .about-teacher__experience {
-  align-items: flex-end;
+  padding-top: 20px;
+  margin-bottom: 20px;
+
   font-weight: 600;
   font-size: 14px;
   line-height: 17px;
   letter-spacing: 0.06em;
   color: var(--title-color);
-  padding-left: 22px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  &::after {
-    content: '___';
-    width: 82px;
-    padding-top: 16px;
-    padding-bottom: 16px;
-    background-color: transparent;
-    color: var(--accent-color);
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 1.65;
-    letter-spacing: 0;
-    margin-left: -22px;
 
-    @include mq(tablet) {
-      padding: 0px;
-    }
-
-    @include mq(desktop) {
-      margin-left: -55px;
-    }
-  }
-  @include mq(tablet) {
-    padding-bottom: 0px;
-  }
+  border-top: 1px solid #b9b9b9;
 
   @include mq(desktop) {
-    margin-left: 36px;
-    padding-bottom: 20px;
-    margin-bottom: 15px;
-    margin-top: 30px;
+    padding-top: 30px;
   }
 }
 
-.about-teacher__experience__iteam {
-  margin-bottom: 20px;
-  text-align: start;
-
-  &::before {
-    content: '';
-    display: flex;
-    width: 17px;
-    height: 14px;
-    background-image: url(../images/check.svg);
-    background-size: contain;
-    background-size: 17px 14px;
-    background-position: center;
-    background-repeat: no-repeat;
-    margin-left: -22px;
-    margin-bottom: -17px;
-
-    @include mq(desktop) {
-      width: 24px;
-      height: 20px;
-      background-size: 24px 20px;
-      margin-left: -55px;
-    }
-  }
+.about-teacher__experience__item {
+  display: flex;
+  align-items: baseline;
 
   @include mq(tablet) {
     font-size: 12px;
     line-height: 1.25;
   }
+
   @include mq(desktop) {
     font-size: 16px;
     line-height: 20px;
-    padding-bottom: 33px;
-    margin-bottom: 0;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 17px;
+
+    @include mq(tablet) {
+      margin-bottom: 15px;
+    }
+
+    @include mq(desktop) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &::before {
+    content: '';
+    flex-shrink: 0;
+    margin-right: 9px;
+    display: block;
+    width: 17px;
+    height: 14px;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../images/check.svg);
+
+    @include mq(desktop) {
+      margin-right: 35px;
+      width: 24px;
+      height: 20px;
+    }
   }
 }
 
 .about-teacher__experience__text {
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 20px;
+  position: relative;
+  padding-top: 24px;
   margin-bottom: 10px;
 
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.67;
+
   @include mq(tablet) {
+    margin-bottom: 24px;
+
     font-size: 10px;
     line-height: 2;
-    margin-bottom: 24px;
-    font-size: 10px;
   }
 
   @include mq(desktop) {
+    margin-bottom: 20px;
+
     font-size: 18px;
     line-height: 1.56;
-    margin-bottom: 20px;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 20px;
+    height: 2px;
+
+    background-color: var(--accent-color);
+  }
+
+  p:not(:last-child) {
+    @include mq(desktop) {
+      margin-bottom: 28px;
+    }
   }
 }
 

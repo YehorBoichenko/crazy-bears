@@ -1,10 +1,10 @@
-.slider {
-}
-
 .slider-for {
   margin-bottom: 30px;
+
   @include mq(desktop) {
+    margin: 0 auto;
     margin-bottom: 40px;
+    width: 1090px;
   }
 }
 
@@ -25,20 +25,14 @@
     width: 100%;
   }
 }
-.slider .slik-slide {
-  @include mq(tablet) {
-    width: 54px;
-    height: auto;
-  }
+
+.slider-nav .slick-list {
+  padding: 4px 0;
 }
 
-.slik-list {
-  max-width: 100%;
-}
-.slik-list .slick-track {
-  @include mq(tablet) {
-    width: 100%;
-    height: auto;
+.slider-for .slick-list {
+  @include mq(desktop) {
+    padding: 20px;
   }
 }
 
@@ -57,6 +51,7 @@
     height: auto;
   }
 }
+
 // arrows styles
 .slider .slick-arrow {
   position: absolute;
@@ -97,30 +92,27 @@
   right: 0;
 }
 
-//arrows for tablet view
-.slider .slider-for .slick-prev {
-  left: 0;
+//arrows for tablet & desktop view
+.slider-for .slick-prev {
+  left: -15px;
+
   @include mq(desktop) {
-    left: 34px;
+    left: -85px;
   }
 }
 
-.slider .slider-for .slick-next {
-  right: 0;
+.slider-for .slick-next {
+  right: -15px;
 
   @include mq(desktop) {
-    right: 34px;
+    right: -85px;
   }
-}
-
-.slider-nav .slick-list {
-  padding: 4px 0;
 }
 
 .slider-nav .slick-current {
   outline: 1px solid var(--accent-color);
 }
 
-.slider-nav .slick-disabled {
+.slick-disabled {
   filter: grayscale(1);
 }

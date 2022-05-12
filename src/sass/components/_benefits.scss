@@ -1,23 +1,23 @@
 /* Стили для секции */
 .benefits {
+  padding-top: 50px;
   min-width: 320px;
   width: 100%;
   height: 100%;
   background-image: linear-gradient(var(--title-color) 70%, var(--title-color-black) 30%);
-  padding: 0;
- 
 
   @include mq(tablet) {
     background-image: linear-gradient(var(--title-color) 50%, var(--title-color-black) 50%);
   }
 
   @include mq(desktop) {
-    padding: 65px 0;
+    padding-top: 65px;
+    padding-bottom: 65px;
     background-image: linear-gradient(var(--title-color) 50%, var(--title-color-black) 50%);
   }
 }
 
-// <!-- Заголовок -->
+//  Заголовок
 .benefits__title {
   font-weight: 800;
   font-size: 20px;
@@ -42,7 +42,7 @@
   }
 }
 
-// <!-- Список элементов -->
+// Список элементов
 .benefits__list {
   list-style-type: none;
   counter-reset: benefits__item;
@@ -65,7 +65,7 @@
   margin-right: auto;
 
   @include mq(tablet) {
-    width: 688px; 
+    width: 688px;
     padding-top: 35px;
     padding-right: 118px;
     padding-bottom: 40px;
@@ -73,22 +73,21 @@
     align-items: stretch;
     grid-template-columns: auto auto;
     gap: 48px 20px;
+  }
 
-    @include mq(desktop) {
-      position: relative;
-      z-index: 10;
+  @include mq(desktop) {
+    position: relative;
+    z-index: 10;
 
-      width: 1314px;
-    
-      padding-top: 70px;
-      padding-right: 82px;
-      padding-bottom: 70px;
-      padding-left: 84px;
+    width: 1314px;
 
-  
-      grid-template-columns: 336px 336px 336px;
-      gap: 60px 40px;
-    }
+    padding-top: 70px;
+    padding-right: 82px;
+    padding-bottom: 70px;
+    padding-left: 84px;
+
+    grid-template-columns: 336px 336px 336px;
+    gap: 60px 40px;
   }
 }
 

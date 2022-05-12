@@ -12,6 +12,7 @@
 // Base
 @import './base/base';
 @import './base/reset';
+@import './base/container';
 
 // Components
 @import './components/about';
@@ -23,7 +24,7 @@
 @import './components/how-we-do';
 @import './components/problems';
 @import './components/program';
-@import './components/reviews';
+@import './components/reviews/module';
 @import './components/modal-form';
 
 // Layouts

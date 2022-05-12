@@ -2,9 +2,6 @@
   padding-top: 30px;
   background-repeat: no-repeat;
   background-size: 100% 878px;
-  background-color: #fefefe;
-  background-image: url(../images/mobile/1x/hero-wave_sm.png);
-  background-size: 100% 618px;
   background-position: -55px;
 
   @include mq(tablet) {
@@ -89,7 +86,7 @@
 }
 
 .hero__text--accent {
-  @extend.hero__subtitle;
+  @extend .hero__subtitle;
   font-weight: 700;
   color: var(--accent-color);
 }
@@ -129,7 +126,21 @@
 }
 
 .hero__img {
-  display: block;
-  width: 100%;
-  height: auto;
+  width: 208px;
+  height: 178px;
+  margin: auto;
+
+  @include mq(tablet) {
+    width: 376px;
+    height: 320px;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  @include mq(desktop) {
+    width: 842px;
+    height: 718px;
+    top: -54px;
+  }
 }

@@ -1,35 +1,53 @@
-<footer class="footer">
-  <div class="container footer__container">
-    <a class="footer__logo" href="./index.html">
-      <div class="footer-logo__title">
-        Hell<svg class="footer-logo__icon" width="22" height="30">
-          <use href="./images/icons.svg#logo-icon"></use></svg
-        >EN
-      </div>
-      <div class="footer-logo__description">
-        <span class="footer-logo__description--accent">hellish</span>english
-      </div>
-    </a>
-    <div class="footer__contacts">
-      <a class="footer-contact__link" href="tel:+380000000000">
-        <svg class="footer-contact__icon" width="30" height="29">
-          <use href="./images/icons.svg#icon-phone"></use>
-        </svg>
-        <span class="footer-contact__number">+38(000)000 00 00</span>
-      </a>
-    </div>
-    <a
-      href="https://instagram.com/"
-      target="_blank"
-      rel="noreferrer noopener"
-      aria-label="Instagram icon"
-      class="footer-social__link"
-    ></a>
-  </div>
+<footer class="section-footer">
+    <div class="container container-footer">
 
-  <div class="container__rights">
-    <div class="container">
-      <span class="container__rights-text">@ All rights reserved, 2019</span>
-    </div>
-  </div>
+        <!-- logo -->
+<div class="footer__logo">
+    <a href="./index.html">
+        <div class="footer__logo-text">Hell
+            <svg class="footer__logo-icon" width="14" height="19">
+            <use href="./images/icons.svg#logo-icon"></use>
+            </svg>EN</div>
+        <div class="footer__logo-text-under">
+            <span class="footer__logo-text-under-color">Hellish</span> english</div>
+    </a>
+</div>
+
+    <!--phone-->
+    <address class="footer__tel">
+        <ul class="footer__contacts">
+            <li class="footer__contacts-list">
+                <a class="footer__call" href="tel:+380000000000">
+                    <svg class="footer__phone-icon" width="20" height="19">
+                        <use href="./images/icons.svg#icon-phone"></use>
+                      </svg>+38 (000) 000 00 00
+                </a>
+            </li>
+            <li class="footer__contacts-list">
+                <a href="https://instagram.com/"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    aria-label="Instagram icon"
+                    class="footer__contact__social__icon"
+                >
+                <img src="./images/instagram.png" alt="Instagram" width="40">
+                <!-- <picture>
+                    <source srcset="./images/instagram.png 1x, ./images/instagram.png@2x.png 2x" />
+                    <img
+                        class="footercontactssocial-link__icon"
+                        src="./images/instagram.png"
+                        alt="Instagram icon"
+                        width="40"
+                        height="40"
+                        loading="lazy"/>
+                </picture> -->
+                </a>
+            </li>
+        </ul>
+    </address>
+      </div>
+
+      <div class="container container__rights">
+          <p class="container__rights-text">@ All rights reserved, 2019</p>
+      </div>
 </footer>

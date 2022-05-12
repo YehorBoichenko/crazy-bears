@@ -2,15 +2,20 @@
   padding-top: 50px;
   background-image: url(../images/tablet/1x/hero-wave_md.png);
   background-repeat: no-repeat;
-  background-size: 100% 878px;
+  background-size: 100% 618px;
+
   background-position: -55px;
+  padding-top: 22px;
+  padding-bottom: 45px;
 
   @include mq(tablet) {
     padding-top: 88px;
+    background-size: 100% 556px;
   }
 
   @include mq(desktop) {
     padding-top: 100px;
+    background-size: 100% 878px;
   }
 }
 
@@ -19,7 +24,6 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  padding-bottom: 34px;
 
   @include mq(tablet) {
     padding-bottom: 138px;
@@ -35,6 +39,7 @@
 .hero__description {
   display: block;
   max-width: 280px;
+  margin-bottom: 45px;
 
   @include mq(tablet) {
     max-width: 332px;
@@ -92,14 +97,13 @@
   font-weight: 700;
   color: var(--accent-color);
 
-  margin-bottom: 52px;
+  // margin-bottom: 52px;
 }
 
 .hero__button {
   display: block;
   width: 260px;
   height: 48px;
-  margin-bottom: 52px;
   margin-top: 52px;
   margin-left: auto;
   margin-right: auto;
@@ -110,6 +114,8 @@
   background-color: var(--accent-color);
   color: var(--primary-bg-color);
   border: none;
+  @include mq(tablet) {
+  }
 }
 
 .hero__image-group {

@@ -1,6 +1,14 @@
 .guarantee {
   padding-top: 25px;
-  padding-bottom: 25px;
+
+  @include mq(mobile) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @include mq(tablet) {
+    width: 768px;
+  }
 
   @include mq(desktop) {
     padding-top: 65px;
@@ -9,7 +17,7 @@
 }
 
 .guarantee__headline {
-  margin-bottom: 30px;
+  padding-bottom: 30px;
   font-weight: 800;
   font-size: 26px;
   line-height: 1.3;

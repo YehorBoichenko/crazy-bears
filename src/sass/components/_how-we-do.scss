@@ -44,8 +44,7 @@
 }
 
 .how-we__item {
-  padding: 30px 15px;
-
+  width: 280px;
   text-align: center;
   background-color: var(--second-color);
   box-shadow: 4px 6.928px 23.68px 8.32px rgb(29 29 27 / 11%);
@@ -53,6 +52,18 @@
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:not(:last-child) {
+    margin-bottom: 15px;
+  }
+
+  &:last-child {
+    margin-bottom: 0px;
+  }
+  &:hover,
+  &:focus {
+    background-color: #ff6b09;
+  }
 
   @include mq(tablet) {
     flex-basis: calc((100% - 2 * 20px) / 2);
@@ -97,10 +108,9 @@
   letter-spacing: 0.08em;
 
   text-align: center;
-  margin-top: 20px;
-
-  color: #111518;
-
+  letter-spacing: 0.08em;
+  margin: 20px 0 30px;
+  width: 100%;
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);

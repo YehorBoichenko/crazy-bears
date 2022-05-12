@@ -55,10 +55,10 @@
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-color);
-
   @include mq(tablet) {
     margin-bottom: 30px;
     font-size: 26px;
+    max-width: 100%;
   }
 
   @include mq(desktop) {
@@ -157,6 +157,11 @@
     text-align: start;
     padding-left: 0px;
     padding-right: 0px;
+  }
+
+  @include mq(desktop) {
+    font-size: 18px;
+    line-height: 28px;
   }
 }
 

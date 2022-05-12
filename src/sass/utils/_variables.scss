@@ -1,19 +1,23 @@
 :root {
   --accent-color: #ff6b09;
   --title-color: #111518;
-  --title-color-black: #ffffff;
   --title-color-white: #ffffff;
   --main-text-color: #b9b9b9;
+
   --advantages-bg-color: #e5e5e5;
   --primary-bg-color: #ffffff;
   --secondary-bg-color: #111518;
   --tertiary-bg-color: #f1f1f1;
-  --button-menu-color: #000;
 
+  --button-menu-color: #000;
   --bg-color-menu: rgba(17, 21, 24, 0.9);
+
   --indent: 30px;
+
   scroll-behavior: smooth;
+
   // duration
+
   --cubic-bezier: cubic-bezier(0.4, 0, 0.2, 1);
   --duration: 250ms;
 }

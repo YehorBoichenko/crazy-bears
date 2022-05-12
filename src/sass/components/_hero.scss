@@ -1,6 +1,6 @@
 .hero-section {
   padding-top: 50px;
-  background-image: url(../images/tablet/1x/hero-wave_md.png);
+  background-image: url(../images/hero/hero-wave_sm.png);
   background-repeat: no-repeat;
   background-size: 100% 618px;
 
@@ -8,15 +8,29 @@
   padding-top: 22px;
   padding-bottom: 45px;
 
+  @include mq(retina) {
+    background-image: url(../images/hero/hero-wave@2x_sm.png);
+  }
+
   @include mq(tablet) {
     padding-top: 53px;
     padding-bottom: 64px;
+    background-image: url(../images/hero/hero-wave_md.png);
     background-size: 100% 556px;
+
+    @include mq(retina) {
+      background-image: url(../images/hero/hero-wave@2x_md.png);
+    }
   }
 
   @include mq(desktop) {
     padding-top: 100px;
+    background-image: url(../images/hero/hero-wave_lg.png);
     background-size: 100% 878px;
+
+    @include mq(retina) {
+      background-image: url(../images/hero/hero-wave@2x_md.png);
+    }
   }
 }
 

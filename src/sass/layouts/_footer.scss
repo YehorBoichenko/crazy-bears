@@ -93,14 +93,14 @@
 
   @include mq(tablet) {
     font-size: 20px;
-    line-height: 24px;
+    line-height: 1.2;
 
     margin-right: 24px;
   }
 
   @include mq(desktop) {
     font-size: 30px;
-    line-height: 37px;
+    line-height: 1.23;
   }
 }
 
@@ -110,14 +110,14 @@
   width: 40px;
   height: 40px;
   background-size: cover;
-  background-image: url(../images/desktop/1x/instagram1.png);
+  background-image: url(../images/footer/instagram1_lg.png);
 
   @include mq(tablet) {
     margin-top: 0px;
   }
 
   @include mq(retina) {
-    background-image: url(../images/desktop/instagram1@2x_lg.png);
+    background-image: url(../images/footer/instagram1@2x_lg.png);
   }
 }
 
@@ -130,7 +130,7 @@
 .container__rights-text {
   font-weight: 500;
   font-size: 14px;
-  line-height: 28px;
+  line-height: 2;
 
   display: flex;
   justify-content: center;

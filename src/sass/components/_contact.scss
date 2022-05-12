@@ -5,18 +5,28 @@
   background-color: #111518;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url(../images/mobile/1x/form_bg.png);
+  background-image: url(../images/contacts/form-bg_sm.png);
+
+  @include mq(retina) {
+    background-image: url(../images/contacts/form-bg@2x_sm.png);
+  }
 
   @include mq(tablet) {
     padding-top: 66px;
     padding-bottom: 66px;
-    background-image: url(../images/tablet/1x/form-bg_md.png);
+    background-image: url(../images/contacts/form-bg_md.png);
+    @include mq(retina) {
+      background-image: url(../images/contacts/form-bg@2x_md.png);
+    }
   }
 
   @include mq(desktop) {
     padding-top: 100px;
     padding-bottom: 62px;
-    background-image: url(../images/desktop/1x/form-bg_lg.png);
+    background-image: url(../images/contacts/form-bg_lg.png);
+    @include mq(retina) {
+      background-image: url(../images/contacts/form-bg@2x_lg.png);
+    }
   }
 }
 

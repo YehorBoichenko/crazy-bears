@@ -65,7 +65,7 @@
 
   font-weight: 800;
   font-size: 20px;
-  line-height: 24px;
+  line-height: 1.2;
   letter-spacing: 0.08em;
   color: var(--title-color);
 
@@ -73,7 +73,7 @@
     margin-bottom: 15px;
 
     font-size: 30px;
-    line-height: 37px;
+    line-height: 1.23px;
   }
 }
 
@@ -83,7 +83,7 @@
 
   font-weight: 600;
   font-size: 14px;
-  line-height: 17px;
+  line-height: 1.2;
   letter-spacing: 0.06em;
   color: var(--title-color);
 
@@ -105,7 +105,7 @@
 
   @include mq(desktop) {
     font-size: 16px;
-    line-height: 20px;
+    line-height: 1.25;
   }
 
   &:not(:last-child) {
@@ -131,7 +131,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-image: url(../images/check.svg);
+    background-image: url(../images/about/check.svg);
 
     @include mq(desktop) {
       margin-right: 35px;
@@ -186,12 +186,12 @@
 .about-certificate {
   font-weight: 500;
   font-size: 12px;
-  line-height: 20px;
+  line-height: 1.66;
   text-decoration-line: underline;
   color: var(--accent-color);
 
   @include mq(desktop) {
     font-size: 18px;
-    line-height: 28px;
+    line-height: 1.55;
   }
 }

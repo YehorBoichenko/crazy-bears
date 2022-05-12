@@ -110,7 +110,7 @@
 
     display: block;
     width: 100vw;
-    border: 1px solid var(--title-color-black);
+    border: 1px solid var(--title-color-white);
   }
 }
 
@@ -146,7 +146,7 @@
 
   @include mq(notDesktop) {
     height: calc(100% + 40px);
-    border: 1px solid var(--title-color-black);
+    border: 1px solid var(--title-color-white);
   }
 }
 
@@ -178,7 +178,7 @@
   line-height: 2;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--title-color-black);
+  color: var(--title-color-white);
 
   @include mq(desktop) {
     font-size: 20px;

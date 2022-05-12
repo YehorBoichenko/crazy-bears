@@ -73,8 +73,7 @@
   font-size: 20px;
   line-height: 1.3;
   letter-spacing: 0.03em;
-  color: #ffffff;
-
+  color: var(--title-color-white);
   @include mq(tablet) {
     margin-bottom: 52px;
     text-align: left;
@@ -213,7 +212,6 @@
   @include mq(desktop) {
     padding-left: 24px;
     font-size: 20px;
-    line-height: 1.6;
     margin-bottom: 10px;
   }
 

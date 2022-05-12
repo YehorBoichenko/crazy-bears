@@ -128,6 +128,7 @@
     &:hover,
     &:focus {
       color: var(--accent-color);
+      transition: var(--duration) var(--cubic-bezier);
     }
     // @include mq(tablet) {
     // }
@@ -176,6 +177,12 @@
   color: var(--accent-color);
   background-color: transparent;
   border: 2px solid var(--accent-color);
+  &:hover,
+  &:focus {
+    color: var(--title-color-white);
+    background-color: var(--accent-color);
+    transition: background-color var(--duration) var(--cubic-bezier);
+  }
 }
 .menu-button__icon--menu {
   fill: var(--button-menu-color);

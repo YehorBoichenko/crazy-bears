@@ -9,7 +9,8 @@
   padding-bottom: 45px;
 
   @include mq(tablet) {
-    padding-top: 88px;
+    padding-top: 53px;
+    padding-bottom: 64px;
     background-size: 100% 556px;
   }
 
@@ -105,7 +106,6 @@
   width: 260px;
   height: 48px;
   margin-top: 52px;
-  margin-left: auto;
   margin-right: auto;
 
   padding-top: 14px;
@@ -114,8 +114,16 @@
   background-color: var(--accent-color);
   color: var(--primary-bg-color);
   border: none;
-  @include mq(tablet) {
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    background-color: var(--primary-bg-color);
+    outline: 2px solid var(--accent-color);
+    transition: background-color var(--duration) var(--cubic-bezier);
   }
+  // @include mq(tablet) {
+  // }
 }
 
 .hero__image-group {

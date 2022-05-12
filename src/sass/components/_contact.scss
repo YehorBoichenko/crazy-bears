@@ -148,6 +148,14 @@
 
   cursor: pointer;
 
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    background-color: transparent;
+    outline: 2px solid var(--accent-color);
+    transition: background-color var(--duration) var(--cubic-bezier);
+  }
+
   @include mq(desktop) {
     width: 354px;
     min-height: 70px;

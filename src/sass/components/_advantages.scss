@@ -1,13 +1,15 @@
-.advantages-section {
-  padding-top: 20px;
-  padding-bottom: 52px;
+.advantages {
+  padding-top: 22px;
+  padding-bottom: 60px;
 
   @include mq(tablet) {
+    padding-top: 48px;
     padding-bottom: 45px;
   }
 
   @include mq(desktop) {
-    padding-bottom: 154px;
+    padding-top: 97px;
+    padding-bottom: 130px;
   }
 }
 
@@ -101,7 +103,7 @@
   color: var(--secondary-bg-color);
 
   @include mq(desktop) {
-    padding-left: 82px;
+    padding-left: 84px;
     font-size: 20px;
     width: 300px;
   }

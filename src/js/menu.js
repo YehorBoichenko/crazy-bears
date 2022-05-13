@@ -13,6 +13,11 @@
   });
 
   function toogleMenu() {
+    const viewPort = window.innerWidth;
+    if (viewPort > 1365) {
+      return;
+    }
+
     const expanded = menuBtnRef.getAttribute('aria-expanded') === 'true' || false;
 
     menuBtnRef.classList.toggle('is-open');

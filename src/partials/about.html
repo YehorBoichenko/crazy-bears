@@ -1,36 +1,60 @@
-<section class="about container">
-  <h2 class="about__title">Teacher</h2>
-  <img class="about__photo" src="./images/mobile/1x/about_sm.jpg" alt="Teacher" />
-  <div class="about-teacher">
-    <h3 class="about-teacher__name">Elena Moreva</h3>
-    <ul class="about-teacher__experience list">
-      <li class="about-teacher__experience__iteam li">
-        6 yeards of experience in preparing students for UPE
-      </li>
-      <li class="about-teacher__experience__iteam li">
-        Own result of passing VNO - 197 points 2 years in a row
-      </li>
-      <li class="about-teacher__experience__iteam li">
-        Passed excellent at the international analogue of UPE - Cambridge PET (Preliminary English
-        Test)
-      </li>
-    </ul>
-    <div class="about-teacher__experience__text">
-      <p>
-        Graduated from the Institute of International Relations of the NAU with a degree in
-        translator-analyst.
-      </p>
-      <p>
-        In spare time takes courses from the best universities in the world on effective teaching
-        and essay writing techniques.
-      </p>
-      <p>
-        Completed: English Grammar and Essay Writing (Berkeley), English Grammar & Style (The
-        University of Queesland), How to Write an Essay (Berkeley), Academic and Business Writing
-        (Berkeley), The Art of Teaching (GEMS education), Powerful Tools for Teaching and Learning
-        (University of Houston).
-      </p>
+<section class="about" id="about">
+  <div class="container">
+    <h2 class="about__title">Teacher</h2>
+    <div class="about-box">
+      <picture>
+        <source
+          srcset="./images/about/about_sm.jpg 1x, ./images/about/about@2x_sm.jpg 2x"
+          media="(min-width: 767px)"
+        />
+        <source
+          srcset="./images/about/about_md.jpg 1x, /images/about/about@2x_md.jpg 2x"
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="./images/about/about_lg.jpg 1x, ./images/about/about@2x_lg.jpg 2x"
+          media="(min-width: 1366px)"
+        />
+        <img class="about__photo" src="./images/about/about_sm.jpg" alt="Teacher" loading="lazy" />
+      </picture>
+      <div class="about-teacher">
+        <h3 class="about-teacher__name">Elena Moreva</h3>
+        <ul class="about-teacher__experience list">
+          <li class="about-teacher__experience__item">
+            6 yeards of experience in preparing students for UPE
+          </li>
+          <li class="about-teacher__experience__item">
+            Own result of passing VNO - 197 points 2 years in a row
+          </li>
+          <li class="about-teacher__experience__item">
+            Passed excellent at the international analogue of UPE - Cambridge PET (Preliminary
+            English Test)
+          </li>
+        </ul>
+        <div class="about-teacher__experience__text">
+          <p>
+            Graduated from the Institute of International Relations of the NAU with a degree in
+            translator-analyst.
+          </p>
+          <p>
+            In spare time takes courses from the best universities in the world on effective
+            teaching and essay writing techniques.
+          </p>
+          <p>
+            Completed: English Grammar and Essay Writing (Berkeley), English Grammar & Style (The
+            University of Queesland), How to Write an Essay (Berkeley), Academic and Business
+            Writing (Berkeley), The Art of Teaching (GEMS education), Powerful Tools for Teaching
+            and Learning (University of Houston).
+          </p>
+        </div>
+        <a
+          class="about-certificate"
+          href="https://www.cambridgeenglish.org/exams-and-tests/preliminary/"
+          target="_blank"
+          rel="noreferrer noopener"
+          >Cambrige English Entry Level Certificate</a
+        >
+      </div>
     </div>
-    <a class="about-certificate" href="">Cambrige English Entry Level Certificate</a>
   </div>
 </section>

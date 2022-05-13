@@ -1,0 +1,170 @@
+.reviews {
+  padding-top: 25px;
+  padding-bottom: 50px;
+
+  @include mq(desktop) {
+    padding-top: 65px;
+    padding-bottom: 130px;
+  }
+}
+
+.reviews-icons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @include mq(tablet) {
+    display: inline-flex;
+    margin-right: 46px;
+  }
+
+  @include mq(desktop) {
+    margin-right: 40px;
+  }
+}
+
+.reviews-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @include mq(tablet) {
+    font-size: 12px;
+    line-height: 1.66;
+    display: flex;
+    justify-content: flex-start;
+    max-width: 412px;
+    align-items: flex-start;
+  }
+
+  @include mq(desktop) {
+    font-size: 18px;
+    line-height: 1.55;
+    max-width: 706px;
+  }
+}
+
+.reviews-title {
+  margin-bottom: 24px;
+
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.3;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-color);
+  @include mq(tablet) {
+    margin-bottom: 30px;
+    font-size: 26px;
+    max-width: 100%;
+  }
+
+  @include mq(desktop) {
+    margin-bottom: 50px;
+    font-size: 46px;
+  }
+}
+
+.slick-track .feadback {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  @include mq(tablet) {
+    padding: 40px;
+
+    flex-direction: row;
+    align-items: flex-start;
+
+    box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+  }
+
+  @include mq(desktop) {
+    padding: 50px 82px;
+  }
+}
+
+.feadbak__photo {
+  margin-bottom: 24px;
+
+  @include mq(tablet) {
+    width: 150px;
+    height: auto;
+  }
+}
+
+.feadbak__name {
+  margin-top: 24px;
+
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 1.21;
+  letter-spacing: 0.08em;
+  color: var(--accent-color);
+
+  @include mq(tablet) {
+    margin-top: 0;
+
+    font-size: 20px;
+    text-align: start;
+  }
+
+  @include mq(desktop) {
+    font-size: 30px;
+  }
+}
+
+.feadbak__education {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  max-width: 240px;
+
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.25;
+  text-align: center;
+  letter-spacing: 0.08em;
+  color: var(--main-text-color);
+
+  @include mq(tablet) {
+    margin-top: 20px;
+    max-width: 412px;
+
+    text-align: start;
+  }
+
+  @include mq(desktop) {
+    max-width: 482px;
+    font-size: 14px;
+    line-height: 1.21;
+  }
+}
+
+.feadback__text {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.66;
+  text-align: center;
+  color: #3d3d3d;
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @include mq(tablet) {
+    text-align: start;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  @include mq(desktop) {
+    font-size: 18px;
+    line-height: 1.55;
+  }
+}
+
+.feadback__tet__all {
+  color: var(--accent-color);
+}

@@ -15,27 +15,14 @@ svg {
   height: auto;
 }
 
-.container {
-  max-width: 490px;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-left: auto;
-  margin-right: auto;
-
-  @include mq(tablet) {
-    padding-left: 20px;
-    padding-right: 20px;
-    max-width: 768px;
-  }
-  @include mq(desktop) {
-    max-width: 1366px;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-}
-
 .section {
-  padding-bottom: 50px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+
+  @include mq(desktop) {
+    padding-top: 65px;
+    padding-bottom: 65px;
+  }
 }
 
 .grid {
@@ -45,5 +32,5 @@ svg {
 }
 
 .grid-item {
-  flex-basis: calc((100% - (var(--indent) * (var(--items) - 1))) / var(--items));
+  flex-basis: calc(100% - (var(--indent) * (var(--items) - 1))) / var(--items);
 }

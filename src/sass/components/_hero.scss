@@ -1,17 +1,36 @@
 .hero-section {
   padding-top: 50px;
-  background-image: url(../images/tablet/1x/hero-wave_md.png);
+  background-image: url(../images/hero/hero-wave_sm.png);
   background-repeat: no-repeat;
-  background-size: cover;
-  width: 100vw;
+  background-size: 100% 618px;
+
   background-position: -55px;
+  padding-top: 22px;
+  padding-bottom: 45px;
+
+  @include mq(retina) {
+    background-image: url(../images/hero/hero-wave@2x_sm.png);
+  }
 
   @include mq(tablet) {
-    padding-top: 88px;
+    padding-top: 53px;
+    padding-bottom: 64px;
+    background-image: url(../images/hero/hero-wave_md.png);
+    background-size: 100% 556px;
+
+    @include mq(retina) {
+      background-image: url(../images/hero/hero-wave@2x_md.png);
+    }
   }
 
   @include mq(desktop) {
     padding-top: 100px;
+    background-image: url(../images/hero/hero-wave_lg.png);
+    background-size: 100% 878px;
+
+    @include mq(retina) {
+      background-image: url(../images/hero/hero-wave@2x_md.png);
+    }
   }
 }
 
@@ -20,7 +39,6 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  padding-bottom: 34px;
 
   @include mq(tablet) {
     padding-bottom: 138px;
@@ -36,7 +54,7 @@
 .hero__description {
   display: block;
   max-width: 280px;
-  //   flex-wrap: wrap;
+  margin-bottom: 45px;
 
   @include mq(tablet) {
     max-width: 332px;
@@ -90,21 +108,20 @@
 }
 
 .hero__text--accent {
-  @extend.hero__subtitle;
+  @extend .hero__subtitle;
   font-weight: 700;
   color: var(--accent-color);
 
-  margin-bottom: 52px;
+  // margin-bottom: 52px;
 }
 
 .hero__button {
   display: block;
   width: 260px;
   height: 48px;
-  margin-bottom: 52px;
   margin-top: 52px;
-  margin-left: auto;
   margin-right: auto;
+  text-align: center;
 
   padding-top: 14px;
   padding-bottom: 14px;
@@ -112,6 +129,16 @@
   background-color: var(--accent-color);
   color: var(--primary-bg-color);
   border: none;
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    background-color: var(--primary-bg-color);
+    outline: 2px solid var(--accent-color);
+    transition: background-color var(--duration) var(--cubic-bezier);
+  }
+  // @include mq(tablet) {
+  // }
 }
 
 .hero__image-group {
@@ -136,6 +163,5 @@
     width: 842px;
     height: 718px;
     top: -54px;
-    right: -144px;
   }
 }

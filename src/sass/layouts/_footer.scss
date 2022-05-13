@@ -77,9 +77,14 @@
   }
 }
 
-.footer-contact__icon {
+.footer__phone-icon {
   fill: var(--accent-color);
   margin-right: 10px;
+  @include mq(desktop) {
+    margin-right: 15px;
+    width: 30px;
+    height: 30px;
+  }
 }
 
 .footer-contact__number {
